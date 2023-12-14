@@ -182,6 +182,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Git 進階語法教學</title>
+    <url>/2023/12/15/Git-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
+    <content><![CDATA[<p>Git 是一個強大的版本控制工具，提供了許多進階功能和技巧，讓您更好地管理程式碼和協作。以下是一些 Git 的進階功能：</p>
+<h2 id="1-Git-分支策略"><a href="#1-Git-分支策略" class="headerlink" title="1. Git 分支策略"></a>1. Git 分支策略</h2><p>深入瞭解如何有效地使用分支，包括特性分支、維護分支和遠端分支。</p>
+<h2 id="2-互動式重新基底（Interactive-Rebase）"><a href="#2-互動式重新基底（Interactive-Rebase）" class="headerlink" title="2. 互動式重新基底（Interactive Rebase）"></a>2. 互動式重新基底（Interactive Rebase）</h2><p>使用互動式重新基底來重整提交歷史，整理提交和解決衝突。</p>
+<h2 id="3-子模組（Submodules）"><a href="#3-子模組（Submodules）" class="headerlink" title="3. 子模組（Submodules）"></a>3. 子模組（Submodules）</h2><p>管理專案中的子模組，以便在專案中引入其他儲存庫。</p>
+<h2 id="4-遠端追蹤分支（Remote-Tracking-Branches）"><a href="#4-遠端追蹤分支（Remote-Tracking-Branches）" class="headerlink" title="4. 遠端追蹤分支（Remote Tracking Branches）"></a>4. 遠端追蹤分支（Remote Tracking Branches）</h2><p>了解如何追蹤遠端儲存庫中的分支，以及如何更新本地追蹤分支。</p>
+<h2 id="5-Git-標籤管理"><a href="#5-Git-標籤管理" class="headerlink" title="5. Git 標籤管理"></a>5. Git 標籤管理</h2><p>深入瞭解如何使用輕量級和附註型標籤來標記重要的提交。</p>
+<h2 id="6-Git-外部工具"><a href="#6-Git-外部工具" class="headerlink" title="6. Git 外部工具"></a>6. Git 外部工具</h2><p>了解如何使用 Git 的外部工具和鉤子來自訂工作流程和自動化操作。</p>
+<h2 id="7-複雜的合併策略"><a href="#7-複雜的合併策略" class="headerlink" title="7. 複雜的合併策略"></a>7. 複雜的合併策略</h2><p>處理複雜的合併情境，如遞歸合併和 octopus 合併。</p>
+<h2 id="8-改寫-Git-歷史"><a href="#8-改寫-Git-歷史" class="headerlink" title="8. 改寫 Git 歷史"></a>8. 改寫 Git 歷史</h2><p>學習如何使用 Git 的命令來改寫提交歷史，包括修改提交、刪除提交和分割提交。</p>
+<h2 id="9-Git-聯盟"><a href="#9-Git-聯盟" class="headerlink" title="9. Git 聯盟"></a>9. Git 聯盟</h2><p>深入瞭解如何建立和維護多個專案的 Git 聯盟。</p>
+<h2 id="10-Git-屬性"><a href="#10-Git-屬性" class="headerlink" title="10. Git 屬性"></a>10. Git 屬性</h2><p>使用 Git 屬性來配置特定檔案的行為，例如 Git 忽略檔案的屬性。</p>
+<h2 id="11-Git-重置策略"><a href="#11-Git-重置策略" class="headerlink" title="11. Git 重置策略"></a>11. Git 重置策略</h2><p>瞭解 Git 重置的不同模式，包括軟重置、混合重置和硬重置。</p>
+<h2 id="12-Git-子指令"><a href="#12-Git-子指令" class="headerlink" title="12. Git 子指令"></a>12. Git 子指令</h2><p>掌握 Git 的一些子指令，如 reflog、cherry-pick、filter-branch 等。</p>
+<h2 id="13-Git-儲存庫清理"><a href="#13-Git-儲存庫清理" class="headerlink" title="13. Git 儲存庫清理"></a>13. Git 儲存庫清理</h2><p>了解如何清理不必要的物件，優化 Git 儲存庫的大小。</p>
+<h2 id="14-Git-內部"><a href="#14-Git-內部" class="headerlink" title="14. Git 內部"></a>14. Git 內部</h2><p>深入瞭解 Git 的內部結構和運作原理。</p>
+]]></content>
+      <categories>
+        <category>Git 課程</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>進階語法教學</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML 基礎教程</title>
     <url>/2023/12/15/HTML-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
@@ -249,33 +276,6 @@
       <tags>
         <tag>基礎教程</tag>
         <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git 進階語法教學</title>
-    <url>/2023/12/15/Git-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
-    <content><![CDATA[<p>Git 是一個強大的版本控制工具，提供了許多進階功能和技巧，讓您更好地管理程式碼和協作。以下是一些 Git 的進階功能：</p>
-<h2 id="1-Git-分支策略"><a href="#1-Git-分支策略" class="headerlink" title="1. Git 分支策略"></a>1. Git 分支策略</h2><p>深入瞭解如何有效地使用分支，包括特性分支、維護分支和遠端分支。</p>
-<h2 id="2-互動式重新基底（Interactive-Rebase）"><a href="#2-互動式重新基底（Interactive-Rebase）" class="headerlink" title="2. 互動式重新基底（Interactive Rebase）"></a>2. 互動式重新基底（Interactive Rebase）</h2><p>使用互動式重新基底來重整提交歷史，整理提交和解決衝突。</p>
-<h2 id="3-子模組（Submodules）"><a href="#3-子模組（Submodules）" class="headerlink" title="3. 子模組（Submodules）"></a>3. 子模組（Submodules）</h2><p>管理專案中的子模組，以便在專案中引入其他儲存庫。</p>
-<h2 id="4-遠端追蹤分支（Remote-Tracking-Branches）"><a href="#4-遠端追蹤分支（Remote-Tracking-Branches）" class="headerlink" title="4. 遠端追蹤分支（Remote Tracking Branches）"></a>4. 遠端追蹤分支（Remote Tracking Branches）</h2><p>了解如何追蹤遠端儲存庫中的分支，以及如何更新本地追蹤分支。</p>
-<h2 id="5-Git-標籤管理"><a href="#5-Git-標籤管理" class="headerlink" title="5. Git 標籤管理"></a>5. Git 標籤管理</h2><p>深入瞭解如何使用輕量級和附註型標籤來標記重要的提交。</p>
-<h2 id="6-Git-外部工具"><a href="#6-Git-外部工具" class="headerlink" title="6. Git 外部工具"></a>6. Git 外部工具</h2><p>了解如何使用 Git 的外部工具和鉤子來自訂工作流程和自動化操作。</p>
-<h2 id="7-複雜的合併策略"><a href="#7-複雜的合併策略" class="headerlink" title="7. 複雜的合併策略"></a>7. 複雜的合併策略</h2><p>處理複雜的合併情境，如遞歸合併和 octopus 合併。</p>
-<h2 id="8-改寫-Git-歷史"><a href="#8-改寫-Git-歷史" class="headerlink" title="8. 改寫 Git 歷史"></a>8. 改寫 Git 歷史</h2><p>學習如何使用 Git 的命令來改寫提交歷史，包括修改提交、刪除提交和分割提交。</p>
-<h2 id="9-Git-聯盟"><a href="#9-Git-聯盟" class="headerlink" title="9. Git 聯盟"></a>9. Git 聯盟</h2><p>深入瞭解如何建立和維護多個專案的 Git 聯盟。</p>
-<h2 id="10-Git-屬性"><a href="#10-Git-屬性" class="headerlink" title="10. Git 屬性"></a>10. Git 屬性</h2><p>使用 Git 屬性來配置特定檔案的行為，例如 Git 忽略檔案的屬性。</p>
-<h2 id="11-Git-重置策略"><a href="#11-Git-重置策略" class="headerlink" title="11. Git 重置策略"></a>11. Git 重置策略</h2><p>瞭解 Git 重置的不同模式，包括軟重置、混合重置和硬重置。</p>
-<h2 id="12-Git-子指令"><a href="#12-Git-子指令" class="headerlink" title="12. Git 子指令"></a>12. Git 子指令</h2><p>掌握 Git 的一些子指令，如 reflog、cherry-pick、filter-branch 等。</p>
-<h2 id="13-Git-儲存庫清理"><a href="#13-Git-儲存庫清理" class="headerlink" title="13. Git 儲存庫清理"></a>13. Git 儲存庫清理</h2><p>了解如何清理不必要的物件，優化 Git 儲存庫的大小。</p>
-<h2 id="14-Git-內部"><a href="#14-Git-內部" class="headerlink" title="14. Git 內部"></a>14. Git 內部</h2><p>深入瞭解 Git 的內部結構和運作原理。</p>
-]]></content>
-      <categories>
-        <category>Git 課程</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>進階語法教學</tag>
       </tags>
   </entry>
   <entry>
@@ -449,6 +449,105 @@
       <tags>
         <tag>進階語法教學</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 語法</title>
+    <url>/2023/12/15/Markdown-%E8%AA%9E%E6%B3%95/</url>
+    <content><![CDATA[<hr>
+<h3 id="程式區塊"><a href="#程式區塊" class="headerlink" title="程式區塊"></a>程式區塊</h3><hr>
+<ul>
+<li>行內程式碼：&#96;</li>
+<li>程式區塊碼：&#96;&#96;&#96; + 程式語言</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="文字字體樣式"><a href="#文字字體樣式" class="headerlink" title="文字字體樣式"></a>文字字體樣式</h3><hr>
+<ul>
+<li><strong>粗體</strong></li>
+<li><em>斜體</em></li>
+<li><em><strong>粗斜體</strong></em></li>
+<li>&#x3D;&#x3D;高亮&#x3D;&#x3D;</li>
+<li><del>刪除線</del></li>
+<li><u>底線</u></li>
+<li>文字<sup>上標</sup></li>
+<li>文字<sub>下標</sub></li>
+<li>文字<mark>高亮</mark></li>
+</ul>
+<h3 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h3><hr>
+<ul>
+<li><h1 id="一級標題"><a href="#一級標題" class="headerlink" title="一級標題"></a>一級標題</h1></li>
+<li><h2 id="二級標題"><a href="#二級標題" class="headerlink" title="二級標題"></a>二級標題</h2></li>
+<li><h3 id="三級標題"><a href="#三級標題" class="headerlink" title="三級標題"></a>三級標題</h3></li>
+<li><h4 id="四級標題"><a href="#四級標題" class="headerlink" title="四級標題"></a>四級標題</h4></li>
+<li><h5 id="五級標題"><a href="#五級標題" class="headerlink" title="五級標題"></a>五級標題</h5></li>
+<li><h6 id="六級標題"><a href="#六級標題" class="headerlink" title="六級標題"></a>六級標題</h6></li>
+<li>一級、二級標題自動加分隔線</li>
+</ul>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><hr>
+<ul>
+<li><blockquote>
+<p>內容</p>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<p>內容</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h3><hr>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>或 ***</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><hr>
+<ul>
+<li><img src="/.com//%E5%9C%96%E7%89%87%E7%B6%B2%E5%9D%80" alt="圖片名稱"></li>
+</ul>
+<h3 id="超鏈結"><a href="#超鏈結" class="headerlink" title="超鏈結"></a>超鏈結</h3><hr>
+<ul>
+<li>[ 文字 ] ( 鏈結 )</li>
+<li>自動鏈結：&lt;<a href="https://www.google.com.tw/">https://www.google.com.tw/</a>&gt;</li>
+</ul>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><hr>
+<ul>
+<li>無序：- 文字</li>
+<li>有序：數字. 文字</li>
+</ul>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><hr>
+<ul>
+<li>Markdown 表格的基本組成是 標題列 和 分隔列，可以沒有資料列。</li>
+<li>表格的欄位數以標題列的欄位數為基準<ul>
+<li>欄位以 | 劃分，外側的垂直分隔符號可以不寫。</li>
+<li>分隔列每欄至少要有三個 - 號，左邊右邊插入 : 號指定對齊方式。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Age           | Time  | Food | Gold | Requirement</span><br><span class="line">|---|---|---|---|---|</span><br><span class="line">Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2</span><br><span class="line">Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2</span><br><span class="line">Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2</span><br></pre></td></tr></table></figure>
+
+<h3 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h3><hr>
+<ul>
+<li>產生目錄：[TOC]</li>
+</ul>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><hr>
+<p>$$ f(x,y,z) &#x3D; 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$</p>
+]]></content>
+      <categories>
+        <category>Markdown 語法</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>語法</tag>
       </tags>
   </entry>
   <entry>
