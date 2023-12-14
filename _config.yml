@@ -105,6 +105,12 @@ deploy:
   type: 'git'
   repo: https://github.com/cattus1110/blog.git
   branch: gh-pages
+admin:
+  deployCommand: 'hexo-generate.bat'
+# hexo-admin authentification
+  username: cattus
+  password_hash: $2a$10$S9hNv6ZbgjgH3CNkbIGNgeYCA8N4IaRs4lvX5izhaUV4k6xNRrbSu
+  secret: cattus
 metadata:
   author_id: defaultAuthorId
   language: zh-TW
