@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cattus1110.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。 1. CSS 基礎引入 CSS在 HTML 中引入 CSS 的方式有兩種： 內部樣式表12345678&lt;head&gt;    &lt;style&gt;        &#x2F;* CSS 樣式規則 *&#x2F;        h1 &#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 基礎教程">
+<meta property="og:url" content="https://cattus1110.com/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="cattus1110 Blog">
+<meta property="og:description" content="CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。 1. CSS 基礎引入 CSS在 HTML 中引入 CSS 的方式有兩種： 內部樣式表12345678&lt;head&gt;    &lt;style&gt;        &#x2F;* CSS 樣式規則 *&#x2F;        h1 &#123;">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://www.csssolid.com/images/box-model/css-box-model.png">
+<meta property="article:published_time" content="2023-12-14T21:24:00.000Z">
+<meta property="article:modified_time" content="2023-12-14T21:25:36.450Z">
+<meta property="article:author" content="cattus1110">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="基礎教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.csssolid.com/images/box-model/css-box-model.png">
+
+
+<link rel="canonical" href="https://cattus1110.com/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://cattus1110.com/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/","path":"2023/12/15/CSS-基礎教程/","title":"CSS 基礎教程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CSS 基礎教程 | cattus1110 Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">cattus1110 Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我的程式筆記</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">9</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS-%E5%9F%BA%E7%A4%8E"><span class="nav-number">1.</span> <span class="nav-text">1. CSS 基礎</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5-CSS"><span class="nav-number">1.1.</span> <span class="nav-text">引入 CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%A7%E9%83%A8%E6%A8%A3%E5%BC%8F%E8%A1%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">內部樣式表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E6%A8%A3%E5%BC%8F%E8%A1%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">外部樣式表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text">2. 選擇器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%99%E7%B1%A4%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.1.</span> <span class="nav-text">標籤選擇器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%9E%E5%88%A5%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.2.</span> <span class="nav-text">類別選擇器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ID-%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.3.</span> <span class="nav-text">ID 選擇器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%8E%E5%B1%A4%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.4.</span> <span class="nav-text">階層選擇器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%8C%E4%BB%A3%E9%81%B8%E6%93%87%E5%99%A8"><span class="nav-number">2.5.</span> <span class="nav-text">後代選擇器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS-%E5%B1%AC%E6%80%A7"><span class="nav-number">3.</span> <span class="nav-text">3. CSS 屬性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E6%A8%A3%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">文本樣式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E6%A8%A3%E5%BC%8F"><span class="nav-number">3.2.</span> <span class="nav-text">背景樣式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">3.3.</span> <span class="nav-text">盒模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%BD%8D"><span class="nav-number">3.4.</span> <span class="nav-text">定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%AF%E7%A4%BA%E5%92%8C%E5%8F%AF%E8%A6%8B%E6%80%A7"><span class="nav-number">3.5.</span> <span class="nav-text">顯示和可見性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-CSS-%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">4. CSS 盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-CSS-%E4%BD%88%E5%B1%80"><span class="nav-number">5.</span> <span class="nav-text">5. CSS 佈局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%BD%8D%E5%92%8C%E6%B5%AE%E5%8B%95"><span class="nav-number">5.1.</span> <span class="nav-text">定位和浮動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%88%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">5.2.</span> <span class="nav-text">彈性盒模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E5%AA%92%E9%AB%94%E6%9F%A5%E8%A9%A2"><span class="nav-number">6.</span> <span class="nav-text">6. 媒體查詢</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-CSS-%E9%A1%8F%E8%89%B2"><span class="nav-number">7.</span> <span class="nav-text">7. CSS 顏色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-CSS-%E5%81%BD%E9%A1%9E%E5%92%8C%E5%81%BD%E5%85%83%E7%B4%A0"><span class="nav-number">8.</span> <span class="nav-text">8. CSS 偽類和偽元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-CSS-%E5%8B%95%E7%95%AB"><span class="nav-number">9.</span> <span class="nav-text">9. CSS 動畫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-CSS-%E9%A0%90%E8%99%95%E7%90%86%E5%99%A8"><span class="nav-number">10.</span> <span class="nav-text">10. CSS 預處理器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-CSS-%E6%A1%86%E6%9E%B6"><span class="nav-number">11.</span> <span class="nav-text">11. CSS 框架</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">cattus1110</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+<div class="links-of-author motion-element">
+    <span class="links-of-author-item">
+      <a href="https://github.com/cattus1110" title="GitHub → https://github.com/cattus1110" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+    </span>
+    <span class="links-of-author-item">
+      <a href="mailto:willon9988@gmail" title="E-Mail → mailto:willon9988@gmail" rel="noopener" target="_blank"><i class="fas fa-envelope fa-fw"></i>E-Mail</a>
+    </span>
+    <span class="links-of-author-item">
+      <a href="https://discord.com/users/513295820783747082" title="Discord → https://discord.com/users/513295820783747082" rel="noopener" target="_blank"><i class="fab fa-discord fa-fw"></i>Discord</a>
+    </span>
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CSS 基礎教程 | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CSS 基礎教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:24:00 / 修改時間：05:25:36" itemprop="dateCreated datePublished" datetime="2023-12-15T05:24:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/css-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">css 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。</p>
+<h2 id="1-CSS-基礎"><a href="#1-CSS-基礎" class="headerlink" title="1. CSS 基礎"></a>1. CSS 基礎</h2><h3 id="引入-CSS"><a href="#引入-CSS" class="headerlink" title="引入 CSS"></a>引入 CSS</h3><p>在 HTML 中引入 CSS 的方式有兩種：</p>
+<h4 id="內部樣式表"><a href="#內部樣式表" class="headerlink" title="內部樣式表"></a>內部樣式表</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="comment">/* CSS 樣式規則 */</span></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: blue;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="外部樣式表"><a href="#外部樣式表" class="headerlink" title="外部樣式表"></a>外部樣式表</h4><p>將 CSS 規則存儲在獨立的 .css 文件中，然後在 HTML 中引入：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;styles.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-選擇器"><a href="#2-選擇器" class="headerlink" title="2. 選擇器"></a>2. 選擇器</h2><h3 id="標籤選擇器"><a href="#標籤選擇器" class="headerlink" title="標籤選擇器"></a>標籤選擇器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="類別選擇器"><a href="#類別選擇器" class="headerlink" title="類別選擇器"></a>類別選擇器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.my-class</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;<span class="selector-tag">p</span> class=&quot;my-class&quot;&gt;這是一個段落。&lt;/<span class="selector-tag">p</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ID-選擇器"><a href="#ID-選擇器" class="headerlink" title="ID 選擇器"></a>ID 選擇器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#my-id</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;<span class="selector-tag">div</span> id=&quot;my-id&quot;&gt;這是一個區塊元素。&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="階層選擇器"><a href="#階層選擇器" class="headerlink" title="階層選擇器"></a>階層選擇器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">list-style-type</span>: square;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="後代選擇器"><a href="#後代選擇器" class="headerlink" title="後代選擇器"></a>後代選擇器</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent-class</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-CSS-屬性"><a href="#3-CSS-屬性" class="headerlink" title="3. CSS 屬性"></a>3. CSS 屬性</h2><h3 id="文本樣式"><a href="#文本樣式" class="headerlink" title="文本樣式"></a>文本樣式</h3><ul>
+<li><code>color</code>：文字顏色。</li>
+<li><code>font-size</code>：字體大小。</li>
+<li><code>font-family</code>：字體類型。</li>
+<li><code>font-weight</code>：字體粗細。</li>
+<li><code>text-decoration</code>：文字裝飾（如下劃線）。</li>
+</ul>
+<h3 id="背景樣式"><a href="#背景樣式" class="headerlink" title="背景樣式"></a>背景樣式</h3><ul>
+<li><code>background-color</code>：背景顏色。</li>
+<li><code>background-image</code>：背景圖像。</li>
+<li><code>background-size</code>：背景圖像大小。</li>
+</ul>
+<h3 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h3><ul>
+<li><code>width</code>：寬度。</li>
+<li><code>height</code>：高度。</li>
+<li><code>margin</code>：外邊距。</li>
+<li><code>padding</code>：內邊距。</li>
+<li><code>border</code>：邊框。</li>
+<li><code>border-radius</code>：邊框圓角。</li>
+</ul>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><ul>
+<li><code>position</code>：元素定位方式。</li>
+<li><code>top</code>、<code>right</code>、<code>bottom</code>、<code>left</code>：位置屬性。</li>
+<li><code>float</code>：浮動元素。</li>
+</ul>
+<h3 id="顯示和可見性"><a href="#顯示和可見性" class="headerlink" title="顯示和可見性"></a>顯示和可見性</h3><ul>
+<li><code>display</code>：元素的顯示方式。</li>
+<li><code>visibility</code>：元素的可見性。</li>
+</ul>
+<h2 id="4-CSS-盒模型"><a href="#4-CSS-盒模型" class="headerlink" title="4. CSS 盒模型"></a>4. CSS 盒模型</h2><p>CSS 盒模型定義了每個 HTML 元素的空間，包括內容、內邊距、邊框和外邊距。</p>
+<p><img src="https://www.csssolid.com/images/box-model/css-box-model.png" alt="盒模型"></p>
+<h2 id="5-CSS-佈局"><a href="#5-CSS-佈局" class="headerlink" title="5. CSS 佈局"></a>5. CSS 佈局</h2><h3 id="定位和浮動"><a href="#定位和浮動" class="headerlink" title="定位和浮動"></a>定位和浮動</h3><ul>
+<li><code>position: static</code>：元素的默認定位方式。</li>
+<li><code>position: relative</code>：相對定位。</li>
+<li><code>position: absolute</code>：絕對定位。</li>
+<li><code>position: fixed</code>：固定定位。</li>
+<li><code>float: left</code>：左浮動。</li>
+<li><code>float: right</code>：右浮動。</li>
+</ul>
+<h3 id="彈性盒模型"><a href="#彈性盒模型" class="headerlink" title="彈性盒模型"></a>彈性盒模型</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-媒體查詢"><a href="#6-媒體查詢" class="headerlink" title="6. 媒體查詢"></a>6. 媒體查詢</h2><p>使用媒體查詢可以根據不同設備的螢幕大小和特性應用不同的 CSS 樣式。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">768px</span>) &#123;</span><br><span class="line">    <span class="comment">/* 在小螢幕上應用的樣式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-CSS-顏色"><a href="#7-CSS-顏色" class="headerlink" title="7. CSS 顏色"></a>7. CSS 顏色</h2><p>CSS 支援多種顏色表示方式，包括名稱、十六進制值和 RGB 值。</p>
+<ul>
+<li><code>color: red;</code></li>
+<li><code>color: #00FF00;</code></li>
+<li><code>color: rgb(255, 0, 0);</code></li>
+</ul>
+<h2 id="8-CSS-偽類和偽元素"><a href="#8-CSS-偽類和偽元素" class="headerlink" title="8. CSS 偽類和偽元素"></a>8. CSS 偽類和偽元素</h2><p>偽類和偽元素用於選擇元素的特定狀態或位置。</p>
+<ul>
+<li><code>:hover</code>：滑鼠懸停時應用的樣式。</li>
+<li><code>:first-child</code>：第一個子元素。</li>
+<li><code>::before</code>：在元素前插入內容。</li>
+</ul>
+<h2 id="9-CSS-動畫"><a href="#9-CSS-動畫" class="headerlink" title="9. CSS 動畫"></a>9. CSS 動畫</h2><p>使用 CSS 動畫可以創建元素的過渡和動畫效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> slide &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.slide</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: slide <span class="number">2s</span> linear infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-CSS-預處理器"><a href="#10-CSS-預處理器" class="headerlink" title="10. CSS 預處理器"></a>10. CSS 預處理器</h2><p>CSS 預處理器（如 SASS 和 LESS）可以增強 CSS 的功能，包括變數、嵌套規則和函數。</p>
+<h2 id="11-CSS-框架"><a href="#11-CSS-框架" class="headerlink" title="11. CSS 框架"></a>11. CSS 框架</h2><p>CSS 框架（如 Bootstrap）提供了現成的樣式和元件，以簡化網頁設計和開發。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/css/" rel="tag"># css</a>
+              <a href="/tags/%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" rel="tag"># 基礎教程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/12/15/HTML-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" rel="prev" title="HTML 高级语法教程">
+                  <i class="fa fa-angle-left"></i> HTML 高级语法教程
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" rel="next" title="CSS 高级语法教程">
+                  CSS 高级语法教程 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">cattus1110</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

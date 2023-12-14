@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cattus1110.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。 1. CSS 变量CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 -- 前缀，如： 123:root &#123;    --main-color: #7eaae0;&#125;  然后，您可以在样式规则中使用变量： 123.elemen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 高级语法教程">
+<meta property="og:url" content="https://cattus1110.com/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="cattus1110 Blog">
+<meta property="og:description" content="CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。 1. CSS 变量CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 -- 前缀，如： 123:root &#123;    --main-color: #7eaae0;&#125;  然后，您可以在样式规则中使用变量： 123.elemen">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-12-14T21:25:00.000Z">
+<meta property="article:modified_time" content="2023-12-14T21:26:33.397Z">
+<meta property="article:author" content="cattus1110">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="高级语法教程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://cattus1110.com/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://cattus1110.com/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/","path":"2023/12/15/CSS-高级语法教程/","title":"CSS 高级语法教程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CSS 高级语法教程 | cattus1110 Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">cattus1110 Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我的程式筆記</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">9</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS-%E5%8F%98%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">1. CSS 变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS-Grid-%E5%B8%83%E5%B1%80"><span class="nav-number">2.</span> <span class="nav-text">2. CSS Grid 布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Flexbox-%E5%B8%83%E5%B1%80"><span class="nav-number">3.</span> <span class="nav-text">3. Flexbox 布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-CSS-%E5%8A%A8%E7%94%BB"><span class="nav-number">4.</span> <span class="nav-text">4. CSS 动画</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0"><span class="nav-number">5.</span> <span class="nav-text">5. 伪类和伪元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-CSS-%E5%8F%98%E6%8D%A2%E5%92%8C%E8%BF%87%E6%B8%A1"><span class="nav-number">6.</span> <span class="nav-text">6. CSS 变换和过渡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="nav-number">7.</span> <span class="nav-text">7. 媒体查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-CSS-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">8.</span> <span class="nav-text">8. CSS 自定义选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-CSS-%E7%BD%91%E6%A0%BC%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%9F%9F"><span class="nav-number">9.</span> <span class="nav-text">9. CSS 网格模板区域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-CSS-%E5%8F%98%E6%8D%A2%E5%8E%9F%E7%82%B9"><span class="nav-number">10.</span> <span class="nav-text">10. CSS 变换原点</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">cattus1110</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+<div class="links-of-author motion-element">
+    <span class="links-of-author-item">
+      <a href="https://github.com/cattus1110" title="GitHub → https://github.com/cattus1110" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+    </span>
+    <span class="links-of-author-item">
+      <a href="mailto:willon9988@gmail" title="E-Mail → mailto:willon9988@gmail" rel="noopener" target="_blank"><i class="fas fa-envelope fa-fw"></i>E-Mail</a>
+    </span>
+    <span class="links-of-author-item">
+      <a href="https://discord.com/users/513295820783747082" title="Discord → https://discord.com/users/513295820783747082" rel="noopener" target="_blank"><i class="fab fa-discord fa-fw"></i>Discord</a>
+    </span>
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CSS 高级语法教程 | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CSS 高级语法教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:25:00 / 修改時間：05:26:33" itemprop="dateCreated datePublished" datetime="2023-12-15T05:25:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/css-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">css 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。</p>
+<h2 id="1-CSS-变量"><a href="#1-CSS-变量" class="headerlink" title="1. CSS 变量"></a>1. CSS 变量</h2><p>CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 <code>--</code> 前缀，如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="attr">--main-color</span>: <span class="number">#7eaae0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，您可以在样式规则中使用变量：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">var</span>(--main-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-CSS-Grid-布局"><a href="#2-CSS-Grid-布局" class="headerlink" title="2. CSS Grid 布局"></a>2. CSS Grid 布局</h2><p>CSS Grid 布局是一种强大的布局系统，可用于创建复杂的网格布局。使用 <code>display: grid;</code> 定义网格容器，然后通过 <code>grid-template-rows</code> 和 <code>grid-template-columns</code> 定义网格的行和列。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">grid-template-rows</span>: auto auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-Flexbox-布局"><a href="#3-Flexbox-布局" class="headerlink" title="3. Flexbox 布局"></a>3. Flexbox 布局</h2><p>Flexbox 布局是一种用于排列和分布元素的弹性布局系统。使用 <code>display: flex;</code> 定义弹性容器，然后使用 <code>flex-direction</code> 控制排列方向。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: row;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-CSS-动画"><a href="#4-CSS-动画" class="headerlink" title="4. CSS 动画"></a>4. CSS 动画</h2><p>CSS 动画使您可以为元素的属性添加动画效果。使用 <code>@keyframes</code> 定义动画序列，然后将其应用到元素上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> slide &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: slide <span class="number">2s</span> linear infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪类和伪元素"><a href="#5-伪类和伪元素" class="headerlink" title="5. 伪类和伪元素"></a>5. 伪类和伪元素</h2><p>CSS 伪类和伪元素允许您选择元素的特定状态和位置。例如，使用 <code>:hover</code> 伪类选择鼠标悬停状态的元素，或使用 <code>::before</code> 创建元素的伪元素。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;Before&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-CSS-变换和过渡"><a href="#6-CSS-变换和过渡" class="headerlink" title="6. CSS 变换和过渡"></a>6. CSS 变换和过渡</h2><p>使用 CSS 变换和过渡可以实现元素的平移、旋转、缩放等效果。使用 <code>transform</code> 属性定义变换，使用 <code>transition</code> 属性实现平滑过渡效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">    <span class="attribute">transition</span>: transform <span class="number">0.5s</span> ease;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-媒体查询"><a href="#7-媒体查询" class="headerlink" title="7. 媒体查询"></a>7. 媒体查询</h2><p>媒体查询允许您根据不同设备的特性和屏幕尺寸应用不同的样式。使用 <code>@media</code> 查询定义不同的样式规则。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">768px</span>) &#123;</span><br><span class="line">    <span class="comment">/* 在小屏幕上应用的样式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-CSS-自定义选择器"><a href="#8-CSS-自定义选择器" class="headerlink" title="8. CSS 自定义选择器"></a>8. CSS 自定义选择器</h2><p>使用 <code>:is()</code> 和 <code>:where()</code> 选择器，可以更方便地进行选择器的组合，以简化样式规则。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:is</span>(<span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>) &#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-CSS-网格模板区域"><a href="#9-CSS-网格模板区域" class="headerlink" title="9. CSS 网格模板区域"></a>9. CSS 网格模板区域</h2><p>CSS 网格模板区域允许您将网格布局中的单元格命名并引用它们，以更精确地控制布局。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.grid</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-areas</span>:</span><br><span class="line">        <span class="string">&quot;header header&quot;</span></span><br><span class="line">        <span class="string">&quot;nav main&quot;</span></span><br><span class="line">        <span class="string">&quot;footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">    <span class="attribute">grid-area</span>: header;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-CSS-变换原点"><a href="#10-CSS-变换原点" class="headerlink" title="10. CSS 变换原点"></a>10. CSS 变换原点</h2><p>使用 <code>transform-origin</code> 属性，您可以更改元素的变换原点，以控制变换的中心点。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform-origin</span>: top left;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/css/" rel="tag"># css</a>
+              <a href="/tags/%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" rel="tag"># 高级语法教程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" rel="prev" title="CSS 基礎教程">
+                  <i class="fa fa-angle-left"></i> CSS 基礎教程
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/12/15/JavaScript-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" rel="next" title="JavaScript 基礎教程">
+                  JavaScript 基礎教程 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">cattus1110</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

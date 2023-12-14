@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>css</title>
-    <url>/2023/12/12/css/</url>
-    <content><![CDATA[<h1 id="CSS-基礎教程"><a href="#CSS-基礎教程" class="headerlink" title="CSS 基礎教程"></a>CSS 基礎教程</h1><p>CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。</p>
+    <title>CSS 基礎教程</title>
+    <url>/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。</p>
 <h2 id="1-CSS-基礎"><a href="#1-CSS-基礎" class="headerlink" title="1. CSS 基礎"></a>1. CSS 基礎</h2><h3 id="引入-CSS"><a href="#引入-CSS" class="headerlink" title="引入 CSS"></a>引入 CSS</h3><p>在 HTML 中引入 CSS 的方式有兩種：</p>
 <h4 id="內部樣式表"><a href="#內部樣式表" class="headerlink" title="內部樣式表"></a>內部樣式表</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="comment">/* CSS 樣式規則 */</span></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: blue;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -81,7 +81,19 @@
 
 <h2 id="10-CSS-預處理器"><a href="#10-CSS-預處理器" class="headerlink" title="10. CSS 預處理器"></a>10. CSS 預處理器</h2><p>CSS 預處理器（如 SASS 和 LESS）可以增強 CSS 的功能，包括變數、嵌套規則和函數。</p>
 <h2 id="11-CSS-框架"><a href="#11-CSS-框架" class="headerlink" title="11. CSS 框架"></a>11. CSS 框架</h2><p>CSS 框架（如 Bootstrap）提供了現成的樣式和元件，以簡化網頁設計和開發。</p>
-<h1 id="CSS-高级语法教程"><a href="#CSS-高级语法教程" class="headerlink" title="CSS 高级语法教程"></a>CSS 高级语法教程</h1><p>CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。</p>
+]]></content>
+      <categories>
+        <category>css 課程</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>基礎教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS 高级语法教程</title>
+    <url>/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。</p>
 <h2 id="1-CSS-变量"><a href="#1-CSS-变量" class="headerlink" title="1. CSS 变量"></a>1. CSS 变量</h2><p>CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 <code>--</code> 前缀，如：</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="attr">--main-color</span>: <span class="number">#7eaae0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -115,35 +127,64 @@
 <h2 id="10-CSS-变换原点"><a href="#10-CSS-变换原点" class="headerlink" title="10. CSS 变换原点"></a>10. CSS 变换原点</h2><p>使用 <code>transform-origin</code> 属性，您可以更改元素的变换原点，以控制变换的中心点。</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform-origin</span>: top left;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>css 課程</category>
+      </categories>
       <tags>
         <tag>css</tag>
+        <tag>高级语法教程</tag>
       </tags>
   </entry>
   <entry>
-    <title>你好世界</title>
-    <url>/2023/12/10/hello-world/</url>
-    <content><![CDATA[<p>歡迎來到 <a href="https://hexo.io/">Hexo</a>! 這是您的第一篇文章。 查看 <a href="https://hexo.io/docs/">documentation</a> 以取得更多資訊。 如果您在使用Hexo 時遇到任何問題，可以在 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 中找到答案，也可以在 <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="快速開始"><a href="#快速開始" class="headerlink" title="快速開始"></a>快速開始</h2><h3 id="建立一個新帖子"><a href="#建立一個新帖子" class="headerlink" title="建立一個新帖子"></a>建立一個新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Git 語法教學</title>
+    <url>/2023/12/15/Git-%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
+    <content><![CDATA[<p>Git 是一個分佈式版本控制系統，用於協作軟體開發，跟蹤變更，並管理程式碼的歷史記錄。以下是一些 Git 的基本語法和指令。</p>
+<h2 id="1-設定-Git"><a href="#1-設定-Git" class="headerlink" title="1. 設定 Git"></a>1. 設定 Git</h2><p>在使用 Git 之前，您需要設定您的使用者名稱和電子郵件地址。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p>更多資訊: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="運行伺服器"><a href="#運行伺服器" class="headerlink" title="運行伺服器"></a>運行伺服器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="2-初始化儲存庫"><a href="#2-初始化儲存庫" class="headerlink" title="2. 初始化儲存庫"></a>2. 初始化儲存庫</h2><p>要開始使用 Git，您需要初始化一個儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 
-<p>更多資訊: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="產生靜態文件"><a href="#產生靜態文件" class="headerlink" title="產生靜態文件"></a>產生靜態文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="3-複製儲存庫（Clone）"><a href="#3-複製儲存庫（Clone）" class="headerlink" title="3. 複製儲存庫（Clone）"></a>3. 複製儲存庫（Clone）</h2><p>複製一個現有的遠端儲存庫到您的本地機器。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone remote_repository_url</span><br></pre></td></tr></table></figure>
 
-<p>更多資訊: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署到遠端站點"><a href="#部署到遠端站點" class="headerlink" title="部署到遠端站點"></a>部署到遠端站點</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="4-提交變更（Commit）"><a href="#4-提交變更（Commit）" class="headerlink" title="4. 提交變更（Commit）"></a>4. 提交變更（Commit）</h2><p>將已修改的檔案提交到儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add filename</span><br><span class="line">git commit -m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure>
 
-<p>更多資訊: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+<h2 id="5-分支管理（Branching）"><a href="#5-分支管理（Branching）" class="headerlink" title="5. 分支管理（Branching）"></a>5. 分支管理（Branching）</h2><p>創建、切換和合併分支。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch branch_name</span><br><span class="line">git checkout branch_name</span><br><span class="line">git merge branch_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-檢視提交歷史"><a href="#6-檢視提交歷史" class="headerlink" title="6. 檢視提交歷史"></a>6. 檢視提交歷史</h2><p>查看提交歷史和差異。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-遠端儲存庫（Remote-Repositories）"><a href="#7-遠端儲存庫（Remote-Repositories）" class="headerlink" title="7. 遠端儲存庫（Remote Repositories）"></a>7. 遠端儲存庫（Remote Repositories）</h2><p>添加、刪除和管理遠端儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add remote_name remote_repository_url</span><br><span class="line">git remote remove remote_name</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-拉取和推送（Pull-and-Push）"><a href="#8-拉取和推送（Pull-and-Push）" class="headerlink" title="8. 拉取和推送（Pull and Push）"></a>8. 拉取和推送（Pull and Push）</h2><p>拉取遠端儲存庫的變更並推送您的變更。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-解決衝突（Resolving-Conflicts）"><a href="#9-解決衝突（Resolving-Conflicts）" class="headerlink" title="9. 解決衝突（Resolving Conflicts）"></a>9. 解決衝突（Resolving Conflicts）</h2><p>當多個分支產生衝突時，解決衝突。</p>
+<h2 id="10-標籤（Tags）"><a href="#10-標籤（Tags）" class="headerlink" title="10. 標籤（Tags）"></a>10. 標籤（Tags）</h2><p>創建和管理標籤以標記特定的提交。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git tag tag_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-忽略檔案（-gitignore）"><a href="#11-忽略檔案（-gitignore）" class="headerlink" title="11. 忽略檔案（.gitignore）"></a>11. 忽略檔案（.gitignore）</h2><p>建立一個 .gitignore 檔案以忽略不需要跟蹤的檔案。</p>
+<h2 id="12-暫存（Stash）"><a href="#12-暫存（Stash）" class="headerlink" title="12. 暫存（Stash）"></a>12. 暫存（Stash）</h2><p>臨時儲存目前的工作，以在其他分支上工作。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git stash save &quot;Stash message&quot;</span><br><span class="line">git stash list</span><br><span class="line">git stash apply stash@&#123;n&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="13-重置（Reset）"><a href="#13-重置（Reset）" class="headerlink" title="13. 重置（Reset）"></a>13. 重置（Reset）</h2><p>重設提交的 HEAD 以及在不同模式下回復檔案。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset commit</span><br><span class="line">git reset file</span><br><span class="line">git reset --hard commit</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Git 課程</category>
+      </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Git</tag>
+        <tag>語法教學</tag>
       </tags>
   </entry>
   <entry>
-    <title>html</title>
-    <url>/2023/12/11/html/</url>
-    <content><![CDATA[<h1 id="HTML-基礎教程"><a href="#HTML-基礎教程" class="headerlink" title="HTML 基礎教程"></a>HTML 基礎教程</h1><p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
+    <title>HTML 基礎教程</title>
+    <url>/2023/12/15/HTML-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
 <h2 id="1-HTML-文件結構"><a href="#1-HTML-文件結構" class="headerlink" title="1. HTML 文件結構"></a>1. HTML 文件結構</h2><p>一個基本的 HTML 文件由以下幾個部分組成：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> <span class="comment">&lt;!-- 声明文档类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> <span class="comment">&lt;!-- 根元素 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="comment">&lt;!-- 頁面頭部資訊，包括標題、引用的樣式和腳本檔案 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span> <span class="comment">&lt;!-- 設置字符編碼 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>頁面標題<span class="tag">&lt;/<span class="name">title</span>&gt;</span> <span class="comment">&lt;!-- 設置頁面標題 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="comment">&lt;!-- 頁面內容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>這是一個標題<span class="tag">&lt;/<span class="name">h1</span>&gt;</span> <span class="comment">&lt;!-- 標題 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>這是一個段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span> <span class="comment">&lt;!-- 段落 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span>&gt;</span>這是一個連結<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="comment">&lt;!-- 連結 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;圖片描述&quot;</span>&gt;</span> <span class="comment">&lt;!-- 圖像 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span> <span class="comment">&lt;!-- 無序列表 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ol</span>&gt;</span> <span class="comment">&lt;!-- 有序列表 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -201,7 +242,46 @@
 <h2 id="8-HTML-屬性"><a href="#8-HTML-屬性" class="headerlink" title="8. HTML 屬性"></a>8. HTML 屬性</h2><ul>
 <li>屬性通常包含在標籤內，用於提供有關元素的附加信息，如 <code>href</code>、<code>src</code>、<code>alt</code> 等。</li>
 </ul>
-<h1 id="HTML-高级语法教程"><a href="#HTML-高级语法教程" class="headerlink" title="HTML 高级语法教程"></a>HTML 高级语法教程</h1><p>HTML（超文本标记语言）是构建网页的基础语言，不仅可以用于创建简单的网页，还可以实现复杂的结构和功能。这份教程将向您介绍一些高级的 HTML 技巧和语法元素。</p>
+]]></content>
+      <categories>
+        <category>html 課程</category>
+      </categories>
+      <tags>
+        <tag>基礎教程</tag>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git 進階語法教學</title>
+    <url>/2023/12/15/Git-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
+    <content><![CDATA[<p>Git 是一個強大的版本控制工具，提供了許多進階功能和技巧，讓您更好地管理程式碼和協作。以下是一些 Git 的進階功能：</p>
+<h2 id="1-Git-分支策略"><a href="#1-Git-分支策略" class="headerlink" title="1. Git 分支策略"></a>1. Git 分支策略</h2><p>深入瞭解如何有效地使用分支，包括特性分支、維護分支和遠端分支。</p>
+<h2 id="2-互動式重新基底（Interactive-Rebase）"><a href="#2-互動式重新基底（Interactive-Rebase）" class="headerlink" title="2. 互動式重新基底（Interactive Rebase）"></a>2. 互動式重新基底（Interactive Rebase）</h2><p>使用互動式重新基底來重整提交歷史，整理提交和解決衝突。</p>
+<h2 id="3-子模組（Submodules）"><a href="#3-子模組（Submodules）" class="headerlink" title="3. 子模組（Submodules）"></a>3. 子模組（Submodules）</h2><p>管理專案中的子模組，以便在專案中引入其他儲存庫。</p>
+<h2 id="4-遠端追蹤分支（Remote-Tracking-Branches）"><a href="#4-遠端追蹤分支（Remote-Tracking-Branches）" class="headerlink" title="4. 遠端追蹤分支（Remote Tracking Branches）"></a>4. 遠端追蹤分支（Remote Tracking Branches）</h2><p>了解如何追蹤遠端儲存庫中的分支，以及如何更新本地追蹤分支。</p>
+<h2 id="5-Git-標籤管理"><a href="#5-Git-標籤管理" class="headerlink" title="5. Git 標籤管理"></a>5. Git 標籤管理</h2><p>深入瞭解如何使用輕量級和附註型標籤來標記重要的提交。</p>
+<h2 id="6-Git-外部工具"><a href="#6-Git-外部工具" class="headerlink" title="6. Git 外部工具"></a>6. Git 外部工具</h2><p>了解如何使用 Git 的外部工具和鉤子來自訂工作流程和自動化操作。</p>
+<h2 id="7-複雜的合併策略"><a href="#7-複雜的合併策略" class="headerlink" title="7. 複雜的合併策略"></a>7. 複雜的合併策略</h2><p>處理複雜的合併情境，如遞歸合併和 octopus 合併。</p>
+<h2 id="8-改寫-Git-歷史"><a href="#8-改寫-Git-歷史" class="headerlink" title="8. 改寫 Git 歷史"></a>8. 改寫 Git 歷史</h2><p>學習如何使用 Git 的命令來改寫提交歷史，包括修改提交、刪除提交和分割提交。</p>
+<h2 id="9-Git-聯盟"><a href="#9-Git-聯盟" class="headerlink" title="9. Git 聯盟"></a>9. Git 聯盟</h2><p>深入瞭解如何建立和維護多個專案的 Git 聯盟。</p>
+<h2 id="10-Git-屬性"><a href="#10-Git-屬性" class="headerlink" title="10. Git 屬性"></a>10. Git 屬性</h2><p>使用 Git 屬性來配置特定檔案的行為，例如 Git 忽略檔案的屬性。</p>
+<h2 id="11-Git-重置策略"><a href="#11-Git-重置策略" class="headerlink" title="11. Git 重置策略"></a>11. Git 重置策略</h2><p>瞭解 Git 重置的不同模式，包括軟重置、混合重置和硬重置。</p>
+<h2 id="12-Git-子指令"><a href="#12-Git-子指令" class="headerlink" title="12. Git 子指令"></a>12. Git 子指令</h2><p>掌握 Git 的一些子指令，如 reflog、cherry-pick、filter-branch 等。</p>
+<h2 id="13-Git-儲存庫清理"><a href="#13-Git-儲存庫清理" class="headerlink" title="13. Git 儲存庫清理"></a>13. Git 儲存庫清理</h2><p>了解如何清理不必要的物件，優化 Git 儲存庫的大小。</p>
+<h2 id="14-Git-內部"><a href="#14-Git-內部" class="headerlink" title="14. Git 內部"></a>14. Git 內部</h2><p>深入瞭解 Git 的內部結構和運作原理。</p>
+]]></content>
+      <categories>
+        <category>Git 課程</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>進階語法教學</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML 高级语法教程</title>
+    <url>/2023/12/15/HTML-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>HTML（超文本标记语言）是构建网页的基础语言，不仅可以用于创建简单的网页，还可以实现复杂的结构和功能。这份教程将向您介绍一些高级的 HTML 技巧和语法元素。</p>
 <h2 id="1-HTML5-结构元素"><a href="#1-HTML5-结构元素" class="headerlink" title="1. HTML5 结构元素"></a>1. HTML5 结构元素</h2><p>HTML5 引入了一些新的语义元素，如 <code>&lt;header&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;article&gt;</code> 和 <code>&lt;footer&gt;</code>，用于更清晰地定义网页的结构。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>网页标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>关于我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>文章标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>文章内容...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="symbol">&amp;copy;</span> 2023 网站名称</span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -237,14 +317,18 @@
 
 <h2 id="10-HTML-渐进增强"><a href="#10-HTML-渐进增强" class="headerlink" title="10. HTML 渐进增强"></a>10. HTML 渐进增强</h2><p>HTML 渐进增强是一种设计原则，它允许在不同设备和浏览器上提供不同级别的体验。使用支持性标签和功能，然后添加更高级的功能以增强用户体验。</p>
 ]]></content>
+      <categories>
+        <category>html 課程</category>
+      </categories>
       <tags>
+        <tag>高级语法教程</tag>
         <tag>html</tag>
       </tags>
   </entry>
   <entry>
-    <title>js</title>
-    <url>/2023/12/13/js/</url>
-    <content><![CDATA[<h1 id="JavaScript-基礎教程"><a href="#JavaScript-基礎教程" class="headerlink" title="JavaScript 基礎教程"></a>JavaScript 基礎教程</h1><p>JavaScript 是一種用於構建互動式網頁和應用程序的腳本語言。本教程將向您介紹 JavaScript 的基礎知識，包括變數、數據類型、運算符、控制流和函數。</p>
+    <title>JavaScript 基礎教程</title>
+    <url>/2023/12/15/JavaScript-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>JavaScript 是一種用於構建互動式網頁和應用程序的腳本語言。本教程將向您介紹 JavaScript 的基礎知識，包括變數、數據類型、運算符、控制流和函數。</p>
 <h2 id="1-JavaScript-基礎"><a href="#1-JavaScript-基礎" class="headerlink" title="1. JavaScript 基礎"></a>1. JavaScript 基礎</h2><h3 id="引入-JavaScript"><a href="#引入-JavaScript" class="headerlink" title="引入 JavaScript"></a>引入 JavaScript</h3><p>在 HTML 中引入 JavaScript 的方式有兩種：</p>
 <h4 id="內部腳本"><a href="#內部腳本" class="headerlink" title="內部腳本"></a>內部腳本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// JavaScript 代碼</span></span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">alert</span>(<span class="string">&quot;Hello, World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -295,11 +379,19 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可能發生錯誤的代碼</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// 處理錯誤</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="12-模組化"><a href="#12-模組化" class="headerlink" title="12. 模組化"></a>12. 模組化</h2><p>JavaScript 支持模組化編程，將代碼拆分成模組並匯入匯出功能。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 模組匯出</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 模組匯入</span></span><br><span class="line"><span class="keyword">import</span> &#123; greet &#125; <span class="keyword">from</span> <span class="string">&quot;./greetings.js&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="JavaScript-進階語法教學"><a href="#JavaScript-進階語法教學" class="headerlink" title="JavaScript 進階語法教學"></a>JavaScript 進階語法教學</h1><h2 id="1-閉包（Closures）"><a href="#1-閉包（Closures）" class="headerlink" title="1. 閉包（Closures）"></a>1. 閉包（Closures）</h2><ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 模組匯出</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 模組匯入</span></span><br><span class="line"><span class="keyword">import</span> &#123; greet &#125; <span class="keyword">from</span> <span class="string">&quot;./greetings.js&quot;</span>;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>JavaScript 課程</category>
+      </categories>
+      <tags>
+        <tag>基礎教程</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 進階語法教學</title>
+    <url>/2023/12/15/JavaScript-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
+    <content><![CDATA[<h2 id="1-閉包（Closures）"><a href="#1-閉包（Closures）" class="headerlink" title="1. 閉包（Closures）"></a>1. 閉包（Closures）</h2><ul>
 <li>什麼是閉包？</li>
 <li>閉包的作用和應用</li>
 <li>閉包的範例和實用情境</li>
@@ -351,8 +443,33 @@
 <h2 id="11-非同步通信"><a href="#11-非同步通信" class="headerlink" title="11. 非同步通信"></a>11. 非同步通信</h2><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">- WebSockets</span></span><br><span class="line"><span class="deletion">- AJAX 請求</span></span><br><span class="line"><span class="deletion">- REST API 和 CRUD 操作</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="12-前端框架和庫"><a href="#12-前端框架和庫" class="headerlink" title="12. 前端框架和庫"></a>12. 前端框架和庫</h2><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">- React、Angular、Vue.js 等</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>JavaScript 課程</category>
+      </categories>
       <tags>
-        <tag>js</tag>
+        <tag>進階語法教學</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好世界</title>
+    <url>/2023/12/10/hello-world/</url>
+    <content><![CDATA[<p>歡迎來到 <a href="https://hexo.io/">Hexo</a>! 這是您的第一篇文章。 查看 <a href="https://hexo.io/docs/">documentation</a> 以取得更多資訊。 如果您在使用Hexo 時遇到任何問題，可以在 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 中找到答案，也可以在 <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="快速開始"><a href="#快速開始" class="headerlink" title="快速開始"></a>快速開始</h2><h3 id="建立一個新帖子"><a href="#建立一個新帖子" class="headerlink" title="建立一個新帖子"></a>建立一個新帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>更多資訊: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="運行伺服器"><a href="#運行伺服器" class="headerlink" title="運行伺服器"></a>運行伺服器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>更多資訊: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="產生靜態文件"><a href="#產生靜態文件" class="headerlink" title="產生靜態文件"></a>產生靜態文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>更多資訊: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到遠端站點"><a href="#部署到遠端站點" class="headerlink" title="部署到遠端站點"></a>部署到遠端站點</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>更多資訊: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>

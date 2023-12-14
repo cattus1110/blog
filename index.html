@@ -86,7 +86,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">0</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">4</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔<span class="badge">9</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
         </a>
@@ -149,13 +149,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -191,7 +196,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/13/js/">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/Git-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -209,7 +214,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/12/13/js/" class="post-title-link" itemprop="url">js</a>
+          <a href="/2023/12/15/Git-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/" class="post-title-link" itemprop="url">Git 進階語法教學</a>
         </h2>
 
         <div class="post-meta-container">
@@ -219,15 +224,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-12-13 12:00:00" itemprop="dateCreated datePublished" datetime="2023-12-13T12:00:00+08:00">2023-12-13</time>
+      <time title="創建時間：2023-12-15 05:31:00 / 修改時間：05:31:45" itemprop="dateCreated datePublished" datetime="2023-12-15T05:31:00+08:00">2023-12-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-12-14 11:18:21" itemprop="dateModified" datetime="2023-12-14T11:18:21+08:00">2023-12-14</time>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">Git 課程</span></a>
+        </span>
     </span>
 
   
@@ -240,62 +248,212 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="JavaScript-基礎教程"><a href="#JavaScript-基礎教程" class="headerlink" title="JavaScript 基礎教程"></a>JavaScript 基礎教程</h1><p>JavaScript 是一種用於構建互動式網頁和應用程序的腳本語言。本教程將向您介紹 JavaScript 的基礎知識，包括變數、數據類型、運算符、控制流和函數。</p>
-<h2 id="1-JavaScript-基礎"><a href="#1-JavaScript-基礎" class="headerlink" title="1. JavaScript 基礎"></a>1. JavaScript 基礎</h2><h3 id="引入-JavaScript"><a href="#引入-JavaScript" class="headerlink" title="引入 JavaScript"></a>引入 JavaScript</h3><p>在 HTML 中引入 JavaScript 的方式有兩種：</p>
-<h4 id="內部腳本"><a href="#內部腳本" class="headerlink" title="內部腳本"></a>內部腳本</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// JavaScript 代碼</span></span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">alert</span>(<span class="string">&quot;Hello, World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          <p>Git 是一個強大的版本控制工具，提供了許多進階功能和技巧，讓您更好地管理程式碼和協作。以下是一些 Git 的進階功能：</p>
+<h2 id="1-Git-分支策略"><a href="#1-Git-分支策略" class="headerlink" title="1. Git 分支策略"></a>1. Git 分支策略</h2><p>深入瞭解如何有效地使用分支，包括特性分支、維護分支和遠端分支。</p>
+<h2 id="2-互動式重新基底（Interactive-Rebase）"><a href="#2-互動式重新基底（Interactive-Rebase）" class="headerlink" title="2. 互動式重新基底（Interactive Rebase）"></a>2. 互動式重新基底（Interactive Rebase）</h2><p>使用互動式重新基底來重整提交歷史，整理提交和解決衝突。</p>
+<h2 id="3-子模組（Submodules）"><a href="#3-子模組（Submodules）" class="headerlink" title="3. 子模組（Submodules）"></a>3. 子模組（Submodules）</h2><p>管理專案中的子模組，以便在專案中引入其他儲存庫。</p>
+<h2 id="4-遠端追蹤分支（Remote-Tracking-Branches）"><a href="#4-遠端追蹤分支（Remote-Tracking-Branches）" class="headerlink" title="4. 遠端追蹤分支（Remote Tracking Branches）"></a>4. 遠端追蹤分支（Remote Tracking Branches）</h2><p>了解如何追蹤遠端儲存庫中的分支，以及如何更新本地追蹤分支。</p>
+<h2 id="5-Git-標籤管理"><a href="#5-Git-標籤管理" class="headerlink" title="5. Git 標籤管理"></a>5. Git 標籤管理</h2><p>深入瞭解如何使用輕量級和附註型標籤來標記重要的提交。</p>
+<h2 id="6-Git-外部工具"><a href="#6-Git-外部工具" class="headerlink" title="6. Git 外部工具"></a>6. Git 外部工具</h2><p>了解如何使用 Git 的外部工具和鉤子來自訂工作流程和自動化操作。</p>
+<h2 id="7-複雜的合併策略"><a href="#7-複雜的合併策略" class="headerlink" title="7. 複雜的合併策略"></a>7. 複雜的合併策略</h2><p>處理複雜的合併情境，如遞歸合併和 octopus 合併。</p>
+<h2 id="8-改寫-Git-歷史"><a href="#8-改寫-Git-歷史" class="headerlink" title="8. 改寫 Git 歷史"></a>8. 改寫 Git 歷史</h2><p>學習如何使用 Git 的命令來改寫提交歷史，包括修改提交、刪除提交和分割提交。</p>
+<h2 id="9-Git-聯盟"><a href="#9-Git-聯盟" class="headerlink" title="9. Git 聯盟"></a>9. Git 聯盟</h2><p>深入瞭解如何建立和維護多個專案的 Git 聯盟。</p>
+<h2 id="10-Git-屬性"><a href="#10-Git-屬性" class="headerlink" title="10. Git 屬性"></a>10. Git 屬性</h2><p>使用 Git 屬性來配置特定檔案的行為，例如 Git 忽略檔案的屬性。</p>
+<h2 id="11-Git-重置策略"><a href="#11-Git-重置策略" class="headerlink" title="11. Git 重置策略"></a>11. Git 重置策略</h2><p>瞭解 Git 重置的不同模式，包括軟重置、混合重置和硬重置。</p>
+<h2 id="12-Git-子指令"><a href="#12-Git-子指令" class="headerlink" title="12. Git 子指令"></a>12. Git 子指令</h2><p>掌握 Git 的一些子指令，如 reflog、cherry-pick、filter-branch 等。</p>
+<h2 id="13-Git-儲存庫清理"><a href="#13-Git-儲存庫清理" class="headerlink" title="13. Git 儲存庫清理"></a>13. Git 儲存庫清理</h2><p>了解如何清理不必要的物件，優化 Git 儲存庫的大小。</p>
+<h2 id="14-Git-內部"><a href="#14-Git-內部" class="headerlink" title="14. Git 內部"></a>14. Git 內部</h2><p>深入瞭解 Git 的內部結構和運作原理。</p>
 
-<h4 id="外部腳本"><a href="#外部腳本" class="headerlink" title="外部腳本"></a>外部腳本</h4><p>將 JavaScript 代碼存儲在一個獨立的 .js 文件中，然後在 HTML 中引入：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;script.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
 
-<h2 id="2-變數和數據類型"><a href="#2-變數和數據類型" class="headerlink" title="2. 變數和數據類型"></a>2. 變數和數據類型</h2><h3 id="變數"><a href="#變數" class="headerlink" title="變數"></a>變數</h3><p>JavaScript 使用 <code>var</code>、<code>let</code> 和 <code>const</code> 声明變數：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;John&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> age = <span class="number">30</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">PI</span> = <span class="number">3.14</span>;</span><br></pre></td></tr></table></figure>
+    
+    
+    
 
-<h3 id="數據類型"><a href="#數據類型" class="headerlink" title="數據類型"></a>數據類型</h3><p>JavaScript 包括多種數據類型：</p>
-<ul>
-<li>字符串：<code>&quot;Hello&quot;</code></li>
-<li>數字：<code>42</code></li>
-<li>布林值：<code>true</code> 或 <code>false</code></li>
-<li>數組：<code>[1, 2, 3]</code></li>
-<li>對象：<code>&#123; name: &quot;John&quot;, age: 30 &#125;</code></li>
-<li>函數：<code>function sayHello() &#123; /* 代碼 */ &#125;</code></li>
-</ul>
-<h2 id="3-運算符"><a href="#3-運算符" class="headerlink" title="3. 運算符"></a>3. 運算符</h2><p>JavaScript 包括各種運算符，如加法、減法、乘法、除法、賦值、比較等。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">let</span> y = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">let</span> sum = x + y; <span class="comment">// 加法</span></span><br><span class="line"><span class="keyword">let</span> difference = x - y; <span class="comment">// 減法</span></span><br><span class="line"><span class="keyword">let</span> product = x * y; <span class="comment">// 乘法</span></span><br><span class="line"><span class="keyword">let</span> quotient = x / y; <span class="comment">// 除法</span></span><br><span class="line"><span class="keyword">let</span> isGreaterThan = x &gt; y; <span class="comment">// 比較</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-控制流"><a href="#4-控制流" class="headerlink" title="4. 控制流"></a>4. 控制流</h2><h3 id="條件語句"><a href="#條件語句" class="headerlink" title="條件語句"></a>條件語句</h3><p>JavaScript 使用 <code>if</code>、<code>else if</code> 和 <code>else</code> 來執行不同的代碼塊：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condition) &#123;</span><br><span class="line">    <span class="comment">// 代碼塊1</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (anotherCondition) &#123;</span><br><span class="line">    <span class="comment">// 代碼塊2</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 代碼塊3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="迴圈"><a href="#迴圈" class="headerlink" title="迴圈"></a>迴圈</h3><p>JavaScript 支持 <code>for</code>、<code>while</code> 和 <code>do...while</code> 迴圈：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (condition) &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125; <span class="keyword">while</span> (condition);</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-函數"><a href="#5-函數" class="headerlink" title="5. 函數"></a>5. 函數</h2><p>JavaScript 使用 <code>function</code> 声明函數：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>函數可以接受參數並返回值。您可以調用函數來執行代碼。</p>
-<h2 id="6-事件處理"><a href="#6-事件處理" class="headerlink" title="6. 事件處理"></a>6. 事件處理</h2><p>JavaScript 用於處理用戶交互和事件，如點擊、滑鼠移動、表單提交等。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myButton&quot;</span>).<span class="title function_">addEventListener</span>(<span class="string">&quot;click&quot;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 處理點擊事件</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-物件和類別"><a href="#7-物件和類別" class="headerlink" title="7. 物件和類別"></a>7. 物件和類別</h2><p>JavaScript 是基於物件的語言。您可以創建物件和類別來組織數據和功能。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + <span class="variable language_">this</span>.<span class="property">name</span> + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-非同步編程"><a href="#8-非同步編程" class="headerlink" title="8. 非同步編程"></a>8. 非同步編程</h2><p>JavaScript 支持非同步編程，包括回調函數、Promise 和 async&#x2F;await。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 非同步代碼</span></span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-DOM-操作"><a href="#9-DOM-操作" class="headerlink" title="9. DOM 操作"></a>9. DOM 操作</h2><p>JavaScript 可以操作文件物件模型（DOM），實現動態改變網頁內容和結構。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myElement&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;New Content&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-AJAX-請求"><a href="#10-AJAX-請求" class="headerlink" title="10. AJAX 請求"></a>10. AJAX 請求</h2><p>JavaScript 可以進行非同步 HTTP 請求，與伺服器通信並獲取數據。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://api.example.com/data&quot;</span>)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> response.<span class="title function_">json</span>())</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 處理數據</span></span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="11-錯誤處理"><a href="#11-錯誤處理" class="headerlink" title="11. 錯誤處理"></a>11. 錯誤處理</h2><p>JavaScript 支持錯誤處理，使用 <code>try</code>、<code>catch</code> 和 <code>throw</code> 來捕獲和處理錯誤。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可能發生錯誤的代碼</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// 處理錯誤</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="12-模組化"><a href="#12-模組化" class="headerlink" title="12. 模組化"></a>12. 模組化</h2><p>JavaScript 支持模組化編程，將代碼拆分成模組並匯入匯出功能。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 模組匯出</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 模組匯入</span></span><br><span class="line"><span class="keyword">import</span> &#123; greet &#125; <span class="keyword">from</span> <span class="string">&quot;./greetings.js&quot;</span>;</span><br></pre></td></tr></table></figure>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
 
 
 
-<h1 id="JavaScript-進階語法教學"><a href="#JavaScript-進階語法教學" class="headerlink" title="JavaScript 進階語法教學"></a>JavaScript 進階語法教學</h1><h2 id="1-閉包（Closures）"><a href="#1-閉包（Closures）" class="headerlink" title="1. 閉包（Closures）"></a>1. 閉包（Closures）</h2><ul>
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/Git-%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/12/15/Git-%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/" class="post-title-link" itemprop="url">Git 語法教學</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:29:00 / 修改時間：05:30:53" itemprop="dateCreated datePublished" datetime="2023-12-15T05:29:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">Git 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Git 是一個分佈式版本控制系統，用於協作軟體開發，跟蹤變更，並管理程式碼的歷史記錄。以下是一些 Git 的基本語法和指令。</p>
+<h2 id="1-設定-Git"><a href="#1-設定-Git" class="headerlink" title="1. 設定 Git"></a>1. 設定 Git</h2><p>在使用 Git 之前，您需要設定您的使用者名稱和電子郵件地址。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-初始化儲存庫"><a href="#2-初始化儲存庫" class="headerlink" title="2. 初始化儲存庫"></a>2. 初始化儲存庫</h2><p>要開始使用 Git，您需要初始化一個儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-複製儲存庫（Clone）"><a href="#3-複製儲存庫（Clone）" class="headerlink" title="3. 複製儲存庫（Clone）"></a>3. 複製儲存庫（Clone）</h2><p>複製一個現有的遠端儲存庫到您的本地機器。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone remote_repository_url</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-提交變更（Commit）"><a href="#4-提交變更（Commit）" class="headerlink" title="4. 提交變更（Commit）"></a>4. 提交變更（Commit）</h2><p>將已修改的檔案提交到儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add filename</span><br><span class="line">git commit -m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-分支管理（Branching）"><a href="#5-分支管理（Branching）" class="headerlink" title="5. 分支管理（Branching）"></a>5. 分支管理（Branching）</h2><p>創建、切換和合併分支。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch branch_name</span><br><span class="line">git checkout branch_name</span><br><span class="line">git merge branch_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-檢視提交歷史"><a href="#6-檢視提交歷史" class="headerlink" title="6. 檢視提交歷史"></a>6. 檢視提交歷史</h2><p>查看提交歷史和差異。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-遠端儲存庫（Remote-Repositories）"><a href="#7-遠端儲存庫（Remote-Repositories）" class="headerlink" title="7. 遠端儲存庫（Remote Repositories）"></a>7. 遠端儲存庫（Remote Repositories）</h2><p>添加、刪除和管理遠端儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add remote_name remote_repository_url</span><br><span class="line">git remote remove remote_name</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-拉取和推送（Pull-and-Push）"><a href="#8-拉取和推送（Pull-and-Push）" class="headerlink" title="8. 拉取和推送（Pull and Push）"></a>8. 拉取和推送（Pull and Push）</h2><p>拉取遠端儲存庫的變更並推送您的變更。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-解決衝突（Resolving-Conflicts）"><a href="#9-解決衝突（Resolving-Conflicts）" class="headerlink" title="9. 解決衝突（Resolving Conflicts）"></a>9. 解決衝突（Resolving Conflicts）</h2><p>當多個分支產生衝突時，解決衝突。</p>
+<h2 id="10-標籤（Tags）"><a href="#10-標籤（Tags）" class="headerlink" title="10. 標籤（Tags）"></a>10. 標籤（Tags）</h2><p>創建和管理標籤以標記特定的提交。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag tag_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-忽略檔案（-gitignore）"><a href="#11-忽略檔案（-gitignore）" class="headerlink" title="11. 忽略檔案（.gitignore）"></a>11. 忽略檔案（.gitignore）</h2><p>建立一個 .gitignore 檔案以忽略不需要跟蹤的檔案。</p>
+<h2 id="12-暫存（Stash）"><a href="#12-暫存（Stash）" class="headerlink" title="12. 暫存（Stash）"></a>12. 暫存（Stash）</h2><p>臨時儲存目前的工作，以在其他分支上工作。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git stash save &quot;Stash message&quot;</span><br><span class="line">git stash list</span><br><span class="line">git stash apply stash@&#123;n&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="13-重置（Reset）"><a href="#13-重置（Reset）" class="headerlink" title="13. 重置（Reset）"></a>13. 重置（Reset）</h2><p>重設提交的 HEAD 以及在不同模式下回復檔案。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reset commit</span><br><span class="line">git reset file</span><br><span class="line">git reset --hard commit</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/JavaScript-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/12/15/JavaScript-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/" class="post-title-link" itemprop="url">JavaScript 進階語法教學</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:28:00 / 修改時間：05:29:06" itemprop="dateCreated datePublished" datetime="2023-12-15T05:28:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/JavaScript-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">JavaScript 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1-閉包（Closures）"><a href="#1-閉包（Closures）" class="headerlink" title="1. 閉包（Closures）"></a>1. 閉包（Closures）</h2><ul>
 <li>什麼是閉包？</li>
 <li>閉包的作用和應用</li>
 <li>閉包的範例和實用情境</li>
@@ -372,7 +530,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/12/css/">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/JavaScript-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -390,7 +548,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/12/12/css/" class="post-title-link" itemprop="url">css</a>
+          <a href="/2023/12/15/JavaScript-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">JavaScript 基礎教程</a>
         </h2>
 
         <div class="post-meta-container">
@@ -400,15 +558,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-12-12 12:00:00" itemprop="dateCreated datePublished" datetime="2023-12-12T12:00:00+08:00">2023-12-12</time>
+      <time title="創建時間：2023-12-15 05:26:00 / 修改時間：05:28:07" itemprop="dateCreated datePublished" datetime="2023-12-15T05:26:00+08:00">2023-12-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-12-14 11:18:28" itemprop="dateModified" datetime="2023-12-14T11:18:28+08:00">2023-12-14</time>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/JavaScript-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">JavaScript 課程</span></a>
+        </span>
     </span>
 
   
@@ -421,7 +582,247 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="CSS-基礎教程"><a href="#CSS-基礎教程" class="headerlink" title="CSS 基礎教程"></a>CSS 基礎教程</h1><p>CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。</p>
+          <p>JavaScript 是一種用於構建互動式網頁和應用程序的腳本語言。本教程將向您介紹 JavaScript 的基礎知識，包括變數、數據類型、運算符、控制流和函數。</p>
+<h2 id="1-JavaScript-基礎"><a href="#1-JavaScript-基礎" class="headerlink" title="1. JavaScript 基礎"></a>1. JavaScript 基礎</h2><h3 id="引入-JavaScript"><a href="#引入-JavaScript" class="headerlink" title="引入 JavaScript"></a>引入 JavaScript</h3><p>在 HTML 中引入 JavaScript 的方式有兩種：</p>
+<h4 id="內部腳本"><a href="#內部腳本" class="headerlink" title="內部腳本"></a>內部腳本</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// JavaScript 代碼</span></span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">alert</span>(<span class="string">&quot;Hello, World!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="外部腳本"><a href="#外部腳本" class="headerlink" title="外部腳本"></a>外部腳本</h4><p>將 JavaScript 代碼存儲在一個獨立的 .js 文件中，然後在 HTML 中引入：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;script.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-變數和數據類型"><a href="#2-變數和數據類型" class="headerlink" title="2. 變數和數據類型"></a>2. 變數和數據類型</h2><h3 id="變數"><a href="#變數" class="headerlink" title="變數"></a>變數</h3><p>JavaScript 使用 <code>var</code>、<code>let</code> 和 <code>const</code> 声明變數：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;John&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> age = <span class="number">30</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">PI</span> = <span class="number">3.14</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="數據類型"><a href="#數據類型" class="headerlink" title="數據類型"></a>數據類型</h3><p>JavaScript 包括多種數據類型：</p>
+<ul>
+<li>字符串：<code>&quot;Hello&quot;</code></li>
+<li>數字：<code>42</code></li>
+<li>布林值：<code>true</code> 或 <code>false</code></li>
+<li>數組：<code>[1, 2, 3]</code></li>
+<li>對象：<code>&#123; name: &quot;John&quot;, age: 30 &#125;</code></li>
+<li>函數：<code>function sayHello() &#123; /* 代碼 */ &#125;</code></li>
+</ul>
+<h2 id="3-運算符"><a href="#3-運算符" class="headerlink" title="3. 運算符"></a>3. 運算符</h2><p>JavaScript 包括各種運算符，如加法、減法、乘法、除法、賦值、比較等。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">let</span> y = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">let</span> sum = x + y; <span class="comment">// 加法</span></span><br><span class="line"><span class="keyword">let</span> difference = x - y; <span class="comment">// 減法</span></span><br><span class="line"><span class="keyword">let</span> product = x * y; <span class="comment">// 乘法</span></span><br><span class="line"><span class="keyword">let</span> quotient = x / y; <span class="comment">// 除法</span></span><br><span class="line"><span class="keyword">let</span> isGreaterThan = x &gt; y; <span class="comment">// 比較</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-控制流"><a href="#4-控制流" class="headerlink" title="4. 控制流"></a>4. 控制流</h2><h3 id="條件語句"><a href="#條件語句" class="headerlink" title="條件語句"></a>條件語句</h3><p>JavaScript 使用 <code>if</code>、<code>else if</code> 和 <code>else</code> 來執行不同的代碼塊：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condition) &#123;</span><br><span class="line">    <span class="comment">// 代碼塊1</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (anotherCondition) &#123;</span><br><span class="line">    <span class="comment">// 代碼塊2</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 代碼塊3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="迴圈"><a href="#迴圈" class="headerlink" title="迴圈"></a>迴圈</h3><p>JavaScript 支持 <code>for</code>、<code>while</code> 和 <code>do...while</code> 迴圈：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (condition) &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="comment">// 迴圈體</span></span><br><span class="line">&#125; <span class="keyword">while</span> (condition);</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-函數"><a href="#5-函數" class="headerlink" title="5. 函數"></a>5. 函數</h2><p>JavaScript 使用 <code>function</code> 声明函數：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>函數可以接受參數並返回值。您可以調用函數來執行代碼。</p>
+<h2 id="6-事件處理"><a href="#6-事件處理" class="headerlink" title="6. 事件處理"></a>6. 事件處理</h2><p>JavaScript 用於處理用戶交互和事件，如點擊、滑鼠移動、表單提交等。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myButton&quot;</span>).<span class="title function_">addEventListener</span>(<span class="string">&quot;click&quot;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 處理點擊事件</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-物件和類別"><a href="#7-物件和類別" class="headerlink" title="7. 物件和類別"></a>7. 物件和類別</h2><p>JavaScript 是基於物件的語言。您可以創建物件和類別來組織數據和功能。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + <span class="variable language_">this</span>.<span class="property">name</span> + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-非同步編程"><a href="#8-非同步編程" class="headerlink" title="8. 非同步編程"></a>8. 非同步編程</h2><p>JavaScript 支持非同步編程，包括回調函數、Promise 和 async&#x2F;await。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 非同步代碼</span></span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-DOM-操作"><a href="#9-DOM-操作" class="headerlink" title="9. DOM 操作"></a>9. DOM 操作</h2><p>JavaScript 可以操作文件物件模型（DOM），實現動態改變網頁內容和結構。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myElement&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;New Content&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-AJAX-請求"><a href="#10-AJAX-請求" class="headerlink" title="10. AJAX 請求"></a>10. AJAX 請求</h2><p>JavaScript 可以進行非同步 HTTP 請求，與伺服器通信並獲取數據。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://api.example.com/data&quot;</span>)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> response.<span class="title function_">json</span>())</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 處理數據</span></span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-錯誤處理"><a href="#11-錯誤處理" class="headerlink" title="11. 錯誤處理"></a>11. 錯誤處理</h2><p>JavaScript 支持錯誤處理，使用 <code>try</code>、<code>catch</code> 和 <code>throw</code> 來捕獲和處理錯誤。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 可能發生錯誤的代碼</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// 處理錯誤</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="12-模組化"><a href="#12-模組化" class="headerlink" title="12. 模組化"></a>12. 模組化</h2><p>JavaScript 支持模組化編程，將代碼拆分成模組並匯入匯出功能。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 模組匯出</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 模組匯入</span></span><br><span class="line"><span class="keyword">import</span> &#123; greet &#125; <span class="keyword">from</span> <span class="string">&quot;./greetings.js&quot;</span>;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/12/15/CSS-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">CSS 高级语法教程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:25:00 / 修改時間：05:26:33" itemprop="dateCreated datePublished" datetime="2023-12-15T05:25:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/css-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">css 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。</p>
+<h2 id="1-CSS-变量"><a href="#1-CSS-变量" class="headerlink" title="1. CSS 变量"></a>1. CSS 变量</h2><p>CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 <code>--</code> 前缀，如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="attr">--main-color</span>: <span class="number">#7eaae0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，您可以在样式规则中使用变量：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">var</span>(--main-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-CSS-Grid-布局"><a href="#2-CSS-Grid-布局" class="headerlink" title="2. CSS Grid 布局"></a>2. CSS Grid 布局</h2><p>CSS Grid 布局是一种强大的布局系统，可用于创建复杂的网格布局。使用 <code>display: grid;</code> 定义网格容器，然后通过 <code>grid-template-rows</code> 和 <code>grid-template-columns</code> 定义网格的行和列。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">grid-template-rows</span>: auto auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-Flexbox-布局"><a href="#3-Flexbox-布局" class="headerlink" title="3. Flexbox 布局"></a>3. Flexbox 布局</h2><p>Flexbox 布局是一种用于排列和分布元素的弹性布局系统。使用 <code>display: flex;</code> 定义弹性容器，然后使用 <code>flex-direction</code> 控制排列方向。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: row;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-CSS-动画"><a href="#4-CSS-动画" class="headerlink" title="4. CSS 动画"></a>4. CSS 动画</h2><p>CSS 动画使您可以为元素的属性添加动画效果。使用 <code>@keyframes</code> 定义动画序列，然后将其应用到元素上。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> slide &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: slide <span class="number">2s</span> linear infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-伪类和伪元素"><a href="#5-伪类和伪元素" class="headerlink" title="5. 伪类和伪元素"></a>5. 伪类和伪元素</h2><p>CSS 伪类和伪元素允许您选择元素的特定状态和位置。例如，使用 <code>:hover</code> 伪类选择鼠标悬停状态的元素，或使用 <code>::before</code> 创建元素的伪元素。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;Before&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-CSS-变换和过渡"><a href="#6-CSS-变换和过渡" class="headerlink" title="6. CSS 变换和过渡"></a>6. CSS 变换和过渡</h2><p>使用 CSS 变换和过渡可以实现元素的平移、旋转、缩放等效果。使用 <code>transform</code> 属性定义变换，使用 <code>transition</code> 属性实现平滑过渡效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">    <span class="attribute">transition</span>: transform <span class="number">0.5s</span> ease;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-媒体查询"><a href="#7-媒体查询" class="headerlink" title="7. 媒体查询"></a>7. 媒体查询</h2><p>媒体查询允许您根据不同设备的特性和屏幕尺寸应用不同的样式。使用 <code>@media</code> 查询定义不同的样式规则。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">768px</span>) &#123;</span><br><span class="line">    <span class="comment">/* 在小屏幕上应用的样式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-CSS-自定义选择器"><a href="#8-CSS-自定义选择器" class="headerlink" title="8. CSS 自定义选择器"></a>8. CSS 自定义选择器</h2><p>使用 <code>:is()</code> 和 <code>:where()</code> 选择器，可以更方便地进行选择器的组合，以简化样式规则。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:is</span>(<span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>) &#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-CSS-网格模板区域"><a href="#9-CSS-网格模板区域" class="headerlink" title="9. CSS 网格模板区域"></a>9. CSS 网格模板区域</h2><p>CSS 网格模板区域允许您将网格布局中的单元格命名并引用它们，以更精确地控制布局。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.grid</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-areas</span>:</span><br><span class="line">        <span class="string">&quot;header header&quot;</span></span><br><span class="line">        <span class="string">&quot;nav main&quot;</span></span><br><span class="line">        <span class="string">&quot;footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">    <span class="attribute">grid-area</span>: header;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-CSS-变换原点"><a href="#10-CSS-变换原点" class="headerlink" title="10. CSS 变换原点"></a>10. CSS 变换原点</h2><p>使用 <code>transform-origin</code> 属性，您可以更改元素的变换原点，以控制变换的中心点。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform-origin</span>: top left;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/12/15/CSS-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">CSS 基礎教程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:24:00 / 修改時間：05:25:36" itemprop="dateCreated datePublished" datetime="2023-12-15T05:24:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/css-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">css 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>CSS（Cascading Style Sheets）是一種用於設計和排版網頁的樣式表語言。本教程將向您介紹 CSS 的基礎知識，包括選擇器、屬性和樣式規則。</p>
 <h2 id="1-CSS-基礎"><a href="#1-CSS-基礎" class="headerlink" title="1. CSS 基礎"></a>1. CSS 基礎</h2><h3 id="引入-CSS"><a href="#引入-CSS" class="headerlink" title="引入 CSS"></a>引入 CSS</h3><p>在 HTML 中引入 CSS 的方式有兩種：</p>
 <h4 id="內部樣式表"><a href="#內部樣式表" class="headerlink" title="內部樣式表"></a>內部樣式表</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="comment">/* CSS 樣式規則 */</span></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: blue;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -499,39 +900,6 @@
 
 <h2 id="10-CSS-預處理器"><a href="#10-CSS-預處理器" class="headerlink" title="10. CSS 預處理器"></a>10. CSS 預處理器</h2><p>CSS 預處理器（如 SASS 和 LESS）可以增強 CSS 的功能，包括變數、嵌套規則和函數。</p>
 <h2 id="11-CSS-框架"><a href="#11-CSS-框架" class="headerlink" title="11. CSS 框架"></a>11. CSS 框架</h2><p>CSS 框架（如 Bootstrap）提供了現成的樣式和元件，以簡化網頁設計和開發。</p>
-<h1 id="CSS-高级语法教程"><a href="#CSS-高级语法教程" class="headerlink" title="CSS 高级语法教程"></a>CSS 高级语法教程</h1><p>CSS（层叠样式表）不仅可以用于简单的样式定义，还可以实现复杂的布局和效果。这份教程将向您介绍一些高级的 CSS 技巧和语法元素。</p>
-<h2 id="1-CSS-变量"><a href="#1-CSS-变量" class="headerlink" title="1. CSS 变量"></a>1. CSS 变量</h2><p>CSS 变量允许您定义和重复使用值，以便在整个样式表中进行维护。定义变量使用 <code>--</code> 前缀，如：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="attr">--main-color</span>: <span class="number">#7eaae0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后，您可以在样式规则中使用变量：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">var</span>(--main-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-CSS-Grid-布局"><a href="#2-CSS-Grid-布局" class="headerlink" title="2. CSS Grid 布局"></a>2. CSS Grid 布局</h2><p>CSS Grid 布局是一种强大的布局系统，可用于创建复杂的网格布局。使用 <code>display: grid;</code> 定义网格容器，然后通过 <code>grid-template-rows</code> 和 <code>grid-template-columns</code> 定义网格的行和列。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">grid-template-rows</span>: auto auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-Flexbox-布局"><a href="#3-Flexbox-布局" class="headerlink" title="3. Flexbox 布局"></a>3. Flexbox 布局</h2><p>Flexbox 布局是一种用于排列和分布元素的弹性布局系统。使用 <code>display: flex;</code> 定义弹性容器，然后使用 <code>flex-direction</code> 控制排列方向。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: row;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-CSS-动画"><a href="#4-CSS-动画" class="headerlink" title="4. CSS 动画"></a>4. CSS 动画</h2><p>CSS 动画使您可以为元素的属性添加动画效果。使用 <code>@keyframes</code> 定义动画序列，然后将其应用到元素上。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> slide &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: slide <span class="number">2s</span> linear infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-伪类和伪元素"><a href="#5-伪类和伪元素" class="headerlink" title="5. 伪类和伪元素"></a>5. 伪类和伪元素</h2><p>CSS 伪类和伪元素允许您选择元素的特定状态和位置。例如，使用 <code>:hover</code> 伪类选择鼠标悬停状态的元素，或使用 <code>::before</code> 创建元素的伪元素。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;Before&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-CSS-变换和过渡"><a href="#6-CSS-变换和过渡" class="headerlink" title="6. CSS 变换和过渡"></a>6. CSS 变换和过渡</h2><p>使用 CSS 变换和过渡可以实现元素的平移、旋转、缩放等效果。使用 <code>transform</code> 属性定义变换，使用 <code>transition</code> 属性实现平滑过渡效果。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">    <span class="attribute">transition</span>: transform <span class="number">0.5s</span> ease;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.element</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-媒体查询"><a href="#7-媒体查询" class="headerlink" title="7. 媒体查询"></a>7. 媒体查询</h2><p>媒体查询允许您根据不同设备的特性和屏幕尺寸应用不同的样式。使用 <code>@media</code> 查询定义不同的样式规则。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">768px</span>) &#123;</span><br><span class="line">    <span class="comment">/* 在小屏幕上应用的样式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-CSS-自定义选择器"><a href="#8-CSS-自定义选择器" class="headerlink" title="8. CSS 自定义选择器"></a>8. CSS 自定义选择器</h2><p>使用 <code>:is()</code> 和 <code>:where()</code> 选择器，可以更方便地进行选择器的组合，以简化样式规则。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:is</span>(<span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>) &#123;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-CSS-网格模板区域"><a href="#9-CSS-网格模板区域" class="headerlink" title="9. CSS 网格模板区域"></a>9. CSS 网格模板区域</h2><p>CSS 网格模板区域允许您将网格布局中的单元格命名并引用它们，以更精确地控制布局。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.grid</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">grid-template-areas</span>:</span><br><span class="line">        <span class="string">&quot;header header&quot;</span></span><br><span class="line">        <span class="string">&quot;nav main&quot;</span></span><br><span class="line">        <span class="string">&quot;footer footer&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">    <span class="attribute">grid-area</span>: header;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-CSS-变换原点"><a href="#10-CSS-变换原点" class="headerlink" title="10. CSS 变换原点"></a>10. CSS 变换原点</h2><p>使用 <code>transform-origin</code> 属性，您可以更改元素的变换原点，以控制变换的中心点。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">    <span class="attribute">transform-origin</span>: top left;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -558,7 +926,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/11/html/">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/HTML-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -576,7 +944,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/12/11/html/" class="post-title-link" itemprop="url">html</a>
+          <a href="/2023/12/15/HTML-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">HTML 高级语法教程</a>
         </h2>
 
         <div class="post-meta-container">
@@ -586,15 +954,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2023-12-11 12:00:00" itemprop="dateCreated datePublished" datetime="2023-12-11T12:00:00+08:00">2023-12-11</time>
+      <time title="創建時間：2023-12-15 05:08:00 / 修改時間：05:15:19" itemprop="dateCreated datePublished" datetime="2023-12-15T05:08:00+08:00">2023-12-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2023-12-14 11:18:01" itemprop="dateModified" datetime="2023-12-14T11:18:01+08:00">2023-12-14</time>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/html-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">html 課程</span></a>
+        </span>
     </span>
 
   
@@ -607,7 +978,120 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="HTML-基礎教程"><a href="#HTML-基礎教程" class="headerlink" title="HTML 基礎教程"></a>HTML 基礎教程</h1><p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
+          <p>HTML（超文本标记语言）是构建网页的基础语言，不仅可以用于创建简单的网页，还可以实现复杂的结构和功能。这份教程将向您介绍一些高级的 HTML 技巧和语法元素。</p>
+<h2 id="1-HTML5-结构元素"><a href="#1-HTML5-结构元素" class="headerlink" title="1. HTML5 结构元素"></a>1. HTML5 结构元素</h2><p>HTML5 引入了一些新的语义元素，如 <code>&lt;header&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;article&gt;</code> 和 <code>&lt;footer&gt;</code>，用于更清晰地定义网页的结构。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>网页标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>关于我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>文章标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>文章内容...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="symbol">&amp;copy;</span> 2023 网站名称</span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-自定义数据属性"><a href="#2-自定义数据属性" class="headerlink" title="2. 自定义数据属性"></a>2. 自定义数据属性</h2><p>您可以使用 <code>data-*</code> 属性为元素添加自定义数据。这些数据可以用于 JavaScript 和 CSS。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">data-username</span>=<span class="string">&quot;john&quot;</span> <span class="attr">data-age</span>=<span class="string">&quot;30&quot;</span>&gt;</span>用户信息<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 JavaScript 中，您可以通过 <code>dataset</code> 属性访问这些数据。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javascriptCopy codeconst element = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> username = element.<span class="property">dataset</span>.<span class="property">username</span>; <span class="comment">// &quot;john&quot;</span></span><br><span class="line"><span class="keyword">const</span> age = element.<span class="property">dataset</span>.<span class="property">age</span>; <span class="comment">// &quot;30&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-嵌入多媒体"><a href="#3-嵌入多媒体" class="headerlink" title="3. 嵌入多媒体"></a>3. 嵌入多媒体</h2><p>HTML 允许您嵌入多媒体内容，如音频和视频。使用 <code>&lt;audio&gt;</code> 和 <code>&lt;video&gt;</code> 元素可以嵌入音频和视频文件。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;music.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">    您的浏览器不支持音频元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;video.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span>&gt;</span></span><br><span class="line">    您的浏览器不支持视频元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-表单高级功能"><a href="#4-表单高级功能" class="headerlink" title="4. 表单高级功能"></a>4. 表单高级功能</h2><p>HTML 表单可以包括复选框、单选按钮、下拉框和文件上传等高级功能。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;interests&quot;</span> <span class="attr">value</span>=<span class="string">&quot;sports&quot;</span>&gt;</span> 运动</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span> 男性</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span> 女性</span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;country&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;usa&quot;</span>&gt;</span>美国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;canada&quot;</span>&gt;</span>加拿大<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;file&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-iframe-元素"><a href="#5-iframe-元素" class="headerlink" title="5. iframe 元素"></a>5. iframe 元素</h2><p>使用 <code>&lt;iframe&gt;</code> 元素可以嵌入其他网页或文档。这在嵌入地图、视频或其他外部内容时非常有用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-语义化表格"><a href="#6-语义化表格" class="headerlink" title="6. 语义化表格"></a>6. 语义化表格</h2><p>创建具有语义的表格是一种高级 HTML 技巧。使用 <code>&lt;th&gt;</code> 元素定义表格标题，<code>&lt;thead&gt;</code>、<code>&lt;tbody&gt;</code> 和 <code>&lt;tfoot&gt;</code> 元素组织表格内容。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>John<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>30<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="7-高级链接"><a href="#7-高级链接" class="headerlink" title="7. 高级链接"></a>7. 高级链接</h2><p>HTML 链接可以包括下载链接、内部链接和锚链接。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;file.pdf&quot;</span> <span class="attr">download</span>&gt;</span>下载文件<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#section&quot;</span>&gt;</span>跳转到节<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>外部链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="8-HTML-注释"><a href="#8-HTML-注释" class="headerlink" title="8. HTML 注释"></a>8. HTML 注释</h2><p>使用 HTML 注释可以向代码添加注释，以便其他开发人员了解代码的用途。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 这是一个HTML注释 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="9-Web-字体"><a href="#9-Web-字体" class="headerlink" title="9. Web 字体"></a>9. Web 字体</h2><p>通过引入 Web 字体，您可以在网页上使用自定义字体。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://fonts.googleapis.com/css?family=Open+Sans&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后，将字体应用于文本。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Open Sans&#x27;</span>, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-HTML-渐进增强"><a href="#10-HTML-渐进增强" class="headerlink" title="10. HTML 渐进增强"></a>10. HTML 渐进增强</h2><p>HTML 渐进增强是一种设计原则，它允许在不同设备和浏览器上提供不同级别的体验。使用支持性标签和功能，然后添加更高级的功能以增强用户体验。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://cattus1110.com/2023/12/15/HTML-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cattus1110">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | cattus1110 Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/12/15/HTML-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">HTML 基礎教程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2023-12-15 05:05:00 / 修改時間：05:15:15" itemprop="dateCreated datePublished" datetime="2023-12-15T05:05:00+08:00">2023-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/html-%E8%AA%B2%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">html 課程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
 <h2 id="1-HTML-文件結構"><a href="#1-HTML-文件結構" class="headerlink" title="1. HTML 文件結構"></a>1. HTML 文件結構</h2><p>一個基本的 HTML 文件由以下幾個部分組成：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span> <span class="comment">&lt;!-- 声明文档类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> <span class="comment">&lt;!-- 根元素 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="comment">&lt;!-- 頁面頭部資訊，包括標題、引用的樣式和腳本檔案 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span> <span class="comment">&lt;!-- 設置字符編碼 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>頁面標題<span class="tag">&lt;/<span class="name">title</span>&gt;</span> <span class="comment">&lt;!-- 設置頁面標題 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="comment">&lt;!-- 頁面內容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>這是一個標題<span class="tag">&lt;/<span class="name">h1</span>&gt;</span> <span class="comment">&lt;!-- 標題 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>這是一個段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span> <span class="comment">&lt;!-- 段落 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span>&gt;</span>這是一個連結<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="comment">&lt;!-- 連結 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;image.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;圖片描述&quot;</span>&gt;</span> <span class="comment">&lt;!-- 圖像 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span> <span class="comment">&lt;!-- 無序列表 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ol</span>&gt;</span> <span class="comment">&lt;!-- 有序列表 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>項目 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -665,41 +1149,6 @@
 <h2 id="8-HTML-屬性"><a href="#8-HTML-屬性" class="headerlink" title="8. HTML 屬性"></a>8. HTML 屬性</h2><ul>
 <li>屬性通常包含在標籤內，用於提供有關元素的附加信息，如 <code>href</code>、<code>src</code>、<code>alt</code> 等。</li>
 </ul>
-<h1 id="HTML-高级语法教程"><a href="#HTML-高级语法教程" class="headerlink" title="HTML 高级语法教程"></a>HTML 高级语法教程</h1><p>HTML（超文本标记语言）是构建网页的基础语言，不仅可以用于创建简单的网页，还可以实现复杂的结构和功能。这份教程将向您介绍一些高级的 HTML 技巧和语法元素。</p>
-<h2 id="1-HTML5-结构元素"><a href="#1-HTML5-结构元素" class="headerlink" title="1. HTML5 结构元素"></a>1. HTML5 结构元素</h2><p>HTML5 引入了一些新的语义元素，如 <code>&lt;header&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;article&gt;</code> 和 <code>&lt;footer&gt;</code>，用于更清晰地定义网页的结构。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>网页标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>关于我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>文章标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>文章内容...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="symbol">&amp;copy;</span> 2023 网站名称</span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-自定义数据属性"><a href="#2-自定义数据属性" class="headerlink" title="2. 自定义数据属性"></a>2. 自定义数据属性</h2><p>您可以使用 <code>data-*</code> 属性为元素添加自定义数据。这些数据可以用于 JavaScript 和 CSS。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">data-username</span>=<span class="string">&quot;john&quot;</span> <span class="attr">data-age</span>=<span class="string">&quot;30&quot;</span>&gt;</span>用户信息<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在 JavaScript 中，您可以通过 <code>dataset</code> 属性访问这些数据。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javascriptCopy codeconst element = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> username = element.<span class="property">dataset</span>.<span class="property">username</span>; <span class="comment">// &quot;john&quot;</span></span><br><span class="line"><span class="keyword">const</span> age = element.<span class="property">dataset</span>.<span class="property">age</span>; <span class="comment">// &quot;30&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-嵌入多媒体"><a href="#3-嵌入多媒体" class="headerlink" title="3. 嵌入多媒体"></a>3. 嵌入多媒体</h2><p>HTML 允许您嵌入多媒体内容，如音频和视频。使用 <code>&lt;audio&gt;</code> 和 <code>&lt;video&gt;</code> 元素可以嵌入音频和视频文件。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;music.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">    您的浏览器不支持音频元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;video.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span>&gt;</span></span><br><span class="line">    您的浏览器不支持视频元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-表单高级功能"><a href="#4-表单高级功能" class="headerlink" title="4. 表单高级功能"></a>4. 表单高级功能</h2><p>HTML 表单可以包括复选框、单选按钮、下拉框和文件上传等高级功能。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;interests&quot;</span> <span class="attr">value</span>=<span class="string">&quot;sports&quot;</span>&gt;</span> 运动</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span> 男性</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span> 女性</span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;country&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;usa&quot;</span>&gt;</span>美国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;canada&quot;</span>&gt;</span>加拿大<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;file&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-iframe-元素"><a href="#5-iframe-元素" class="headerlink" title="5. iframe 元素"></a>5. iframe 元素</h2><p>使用 <code>&lt;iframe&gt;</code> 元素可以嵌入其他网页或文档。这在嵌入地图、视频或其他外部内容时非常有用。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-语义化表格"><a href="#6-语义化表格" class="headerlink" title="6. 语义化表格"></a>6. 语义化表格</h2><p>创建具有语义的表格是一种高级 HTML 技巧。使用 <code>&lt;th&gt;</code> 元素定义表格标题，<code>&lt;thead&gt;</code>、<code>&lt;tbody&gt;</code> 和 <code>&lt;tfoot&gt;</code> 元素组织表格内容。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>John<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>30<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="7-高级链接"><a href="#7-高级链接" class="headerlink" title="7. 高级链接"></a>7. 高级链接</h2><p>HTML 链接可以包括下载链接、内部链接和锚链接。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;file.pdf&quot;</span> <span class="attr">download</span>&gt;</span>下载文件<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#section&quot;</span>&gt;</span>跳转到节<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.example.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>外部链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="8-HTML-注释"><a href="#8-HTML-注释" class="headerlink" title="8. HTML 注释"></a>8. HTML 注释</h2><p>使用 HTML 注释可以向代码添加注释，以便其他开发人员了解代码的用途。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 这是一个HTML注释 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="9-Web-字体"><a href="#9-Web-字体" class="headerlink" title="9. Web 字体"></a>9. Web 字体</h2><p>通过引入 Web 字体，您可以在网页上使用自定义字体。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://fonts.googleapis.com/css?family=Open+Sans&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>然后，将字体应用于文本。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Open Sans&#x27;</span>, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-HTML-渐进增强"><a href="#10-HTML-渐进增强" class="headerlink" title="10. HTML 渐进增强"></a>10. HTML 渐进增强</h2><p>HTML 渐进增强是一种设计原则，它允许在不同设备和浏览器上提供不同级别的体验。使用支持性标签和功能，然后添加更高级的功能以增强用户体验。</p>
 
       
     </div>
