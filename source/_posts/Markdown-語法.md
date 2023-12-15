@@ -94,8 +94,8 @@ for i in range(10):
 
 ---
 
-- ![upload successful](\images\pasted-0.png)
-`![upload successful](\images\pasted-0.png)`
+- ![upload successful](..\images\pasted-0.png)
+`![upload successful](..\images\pasted-0.png)`
 
 ### 超鏈結
 
