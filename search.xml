@@ -464,61 +464,52 @@
 
 <h3 id="文字字體樣式"><a href="#文字字體樣式" class="headerlink" title="文字字體樣式"></a>文字字體樣式</h3><hr>
 <ul>
-<li><strong>粗體</strong></li>
-<li><em>斜體</em></li>
-<li><em><strong>粗斜體</strong></em></li>
-<li>&#x3D;&#x3D;高亮&#x3D;&#x3D;</li>
-<li><del>刪除線</del></li>
-<li><u>底線</u></li>
-<li>文字<sup>上標</sup></li>
-<li>文字<sub>下標</sub></li>
-<li>文字<mark>高亮</mark></li>
+<li><strong>粗體</strong><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">**粗體**</span><br></pre></td></tr></table></figure></li>
+<li><em>斜體</em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜體*</span><br></pre></td></tr></table></figure></li>
+<li><em><strong>粗斜體</strong></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">***粗斜體***</span><br></pre></td></tr></table></figure></li>
+<li>&#x3D;&#x3D;高亮&#x3D;&#x3D;<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==高亮==</span><br></pre></td></tr></table></figure></li>
+<li><del>刪除線</del><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~刪除線~~</span><br></pre></td></tr></table></figure></li>
+<li><u>底線</u><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;底線&lt;/u&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<sup>上標</sup><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sup&gt;上標&lt;/sup&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<sub>下標</sub><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sub&gt;下標&lt;/sub&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<mark>高亮</mark><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;mark&gt;高亮&lt;/mark&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h3 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h3><hr>
 <ul>
-<li><h1 id="一級標題"><a href="#一級標題" class="headerlink" title="一級標題"></a>一級標題</h1></li>
-<li><h2 id="二級標題"><a href="#二級標題" class="headerlink" title="二級標題"></a>二級標題</h2></li>
-<li><h3 id="三級標題"><a href="#三級標題" class="headerlink" title="三級標題"></a>三級標題</h3></li>
-<li><h4 id="四級標題"><a href="#四級標題" class="headerlink" title="四級標題"></a>四級標題</h4></li>
-<li><h5 id="五級標題"><a href="#五級標題" class="headerlink" title="五級標題"></a>五級標題</h5></li>
-<li><h6 id="六級標題"><a href="#六級標題" class="headerlink" title="六級標題"></a>六級標題</h6></li>
+<li><h1 id="一級標題"><a href="#一級標題" class="headerlink" title="一級標題	#"></a>一級標題	<code>#</code></h1></li>
+<li><h2 id="二級標題"><a href="#二級標題" class="headerlink" title="二級標題	##"></a>二級標題	<code>##</code></h2></li>
+<li><h3 id="三級標題"><a href="#三級標題" class="headerlink" title="三級標題	###"></a>三級標題	<code>###</code></h3></li>
+<li><h4 id="四級標題"><a href="#四級標題" class="headerlink" title="四級標題	####"></a>四級標題	<code>####</code></h4></li>
+<li><h5 id="五級標題"><a href="#五級標題" class="headerlink" title="五級標題	#####"></a>五級標題	<code>#####</code></h5></li>
+<li><h6 id="六級標題"><a href="#六級標題" class="headerlink" title="六級標題	######"></a>六級標題	<code>######</code></h6></li>
 <li>一級、二級標題自動加分隔線</li>
 </ul>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><hr>
 <ul>
 <li><blockquote>
-<p>內容</p>
+<p>內容	<code>&gt;內容</code></p>
 </blockquote>
 </li>
 <li><blockquote>
 <blockquote>
-<p>內容</p>
+<p>內容	<code>&gt;&gt;內容</code></p>
 </blockquote>
 </blockquote>
 </li>
 </ul>
 <h3 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h3><hr>
-<ul>
-<li><ul>
-<li><ul>
-<li><ul>
-<li>或 ***</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p><code>---</code></p>
+<p><code>- - - - 或 ***</code></p>
 <h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><hr>
 <ul>
-<li><img src="/.com//%E5%9C%96%E7%89%87%E7%B6%B2%E5%9D%80" alt="圖片名稱"></li>
+<li><img src="/.com//%5Cimages%5Cpasted-0.png" alt="upload successful"><br><code>![upload successful](\images\pasted-0.png)</code></li>
 </ul>
 <h3 id="超鏈結"><a href="#超鏈結" class="headerlink" title="超鏈結"></a>超鏈結</h3><hr>
 <ul>
 <li>[ 文字 ] ( 鏈結 )</li>
 <li>自動鏈結：&lt;<a href="https://www.google.com.tw/">https://www.google.com.tw/</a>&gt;</li>
 </ul>
+<p><code>自動鏈結：&lt;[https://www.google.com.tw/](https://www.google.com.tw/)&gt;</code></p>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><hr>
 <ul>
 <li>無序：- 文字</li>
