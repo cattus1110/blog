@@ -163,52 +163,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git 語法教學</title>
-    <url>/2023/12/15/Git-%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
-    <content><![CDATA[<p>Git 是一個分佈式版本控制系統，用於協作軟體開發，跟蹤變更，並管理程式碼的歷史記錄。以下是一些 Git 的基本語法和指令。</p>
-<h2 id="1-設定-Git"><a href="#1-設定-Git" class="headerlink" title="1. 設定 Git"></a>1. 設定 Git</h2><p>在使用 Git 之前，您需要設定您的使用者名稱和電子郵件地址。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-初始化儲存庫"><a href="#2-初始化儲存庫" class="headerlink" title="2. 初始化儲存庫"></a>2. 初始化儲存庫</h2><p>要開始使用 Git，您需要初始化一個儲存庫。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-複製儲存庫（Clone）"><a href="#3-複製儲存庫（Clone）" class="headerlink" title="3. 複製儲存庫（Clone）"></a>3. 複製儲存庫（Clone）</h2><p>複製一個現有的遠端儲存庫到您的本地機器。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone remote_repository_url</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-提交變更（Commit）"><a href="#4-提交變更（Commit）" class="headerlink" title="4. 提交變更（Commit）"></a>4. 提交變更（Commit）</h2><p>將已修改的檔案提交到儲存庫。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add filename</span><br><span class="line">git commit -m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-分支管理（Branching）"><a href="#5-分支管理（Branching）" class="headerlink" title="5. 分支管理（Branching）"></a>5. 分支管理（Branching）</h2><p>創建、切換和合併分支。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch branch_name</span><br><span class="line">git checkout branch_name</span><br><span class="line">git merge branch_name</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-檢視提交歷史"><a href="#6-檢視提交歷史" class="headerlink" title="6. 檢視提交歷史"></a>6. 檢視提交歷史</h2><p>查看提交歷史和差異。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-遠端儲存庫（Remote-Repositories）"><a href="#7-遠端儲存庫（Remote-Repositories）" class="headerlink" title="7. 遠端儲存庫（Remote Repositories）"></a>7. 遠端儲存庫（Remote Repositories）</h2><p>添加、刪除和管理遠端儲存庫。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add remote_name remote_repository_url</span><br><span class="line">git remote remove remote_name</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-拉取和推送（Pull-and-Push）"><a href="#8-拉取和推送（Pull-and-Push）" class="headerlink" title="8. 拉取和推送（Pull and Push）"></a>8. 拉取和推送（Pull and Push）</h2><p>拉取遠端儲存庫的變更並推送您的變更。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-解決衝突（Resolving-Conflicts）"><a href="#9-解決衝突（Resolving-Conflicts）" class="headerlink" title="9. 解決衝突（Resolving Conflicts）"></a>9. 解決衝突（Resolving Conflicts）</h2><p>當多個分支產生衝突時，解決衝突。</p>
-<h2 id="10-標籤（Tags）"><a href="#10-標籤（Tags）" class="headerlink" title="10. 標籤（Tags）"></a>10. 標籤（Tags）</h2><p>創建和管理標籤以標記特定的提交。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git tag tag_name</span><br></pre></td></tr></table></figure>
-
-<h2 id="11-忽略檔案（-gitignore）"><a href="#11-忽略檔案（-gitignore）" class="headerlink" title="11. 忽略檔案（.gitignore）"></a>11. 忽略檔案（.gitignore）</h2><p>建立一個 .gitignore 檔案以忽略不需要跟蹤的檔案。</p>
-<h2 id="12-暫存（Stash）"><a href="#12-暫存（Stash）" class="headerlink" title="12. 暫存（Stash）"></a>12. 暫存（Stash）</h2><p>臨時儲存目前的工作，以在其他分支上工作。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git stash save &quot;Stash message&quot;</span><br><span class="line">git stash list</span><br><span class="line">git stash apply stash@&#123;n&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="13-重置（Reset）"><a href="#13-重置（Reset）" class="headerlink" title="13. 重置（Reset）"></a>13. 重置（Reset）</h2><p>重設提交的 HEAD 以及在不同模式下回復檔案。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset commit</span><br><span class="line">git reset file</span><br><span class="line">git reset --hard commit</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Git 課程</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>語法教學</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML 基礎教程</title>
     <url>/2023/12/15/HTML-%E5%9F%BA%E7%A4%8E%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>HTML（Hypertext Markup Language）是一個用於創建網頁內容的標記語言。本教程將向您介紹 HTML 的基礎知識，包括常用的 HTML 標籤和屬性。</p>
@@ -389,96 +343,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 語法</title>
-    <url>/2023/12/15/Markdown-%E8%AA%9E%E6%B3%95/</url>
-    <content><![CDATA[<hr>
-<h3 id="程式區塊"><a href="#程式區塊" class="headerlink" title="程式區塊"></a>程式區塊</h3><hr>
-<ul>
-<li>行內程式碼：&#96;</li>
-<li>程式區塊碼：&#96;&#96;&#96; + 程式語言</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-
-<h3 id="文字字體樣式"><a href="#文字字體樣式" class="headerlink" title="文字字體樣式"></a>文字字體樣式</h3><hr>
-<ul>
-<li><strong>粗體</strong><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">**粗體**</span><br></pre></td></tr></table></figure></li>
-<li><em>斜體</em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜體*</span><br></pre></td></tr></table></figure></li>
-<li><em><strong>粗斜體</strong></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">***粗斜體***</span><br></pre></td></tr></table></figure></li>
-<li>&#x3D;&#x3D;高亮&#x3D;&#x3D;<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==高亮==</span><br></pre></td></tr></table></figure></li>
-<li><del>刪除線</del><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~刪除線~~</span><br></pre></td></tr></table></figure></li>
-<li><u>底線</u><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;底線&lt;/u&gt;</span><br></pre></td></tr></table></figure></li>
-<li>文字<sup>上標</sup><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sup&gt;上標&lt;/sup&gt;</span><br></pre></td></tr></table></figure></li>
-<li>文字<sub>下標</sub><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sub&gt;下標&lt;/sub&gt;</span><br></pre></td></tr></table></figure></li>
-<li>文字<mark>高亮</mark><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;mark&gt;高亮&lt;/mark&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h3><hr>
-<ul>
-<li><h1 id="一級標題"><a href="#一級標題" class="headerlink" title="一級標題	#"></a>一級標題	<code>#</code></h1></li>
-<li><h2 id="二級標題"><a href="#二級標題" class="headerlink" title="二級標題	##"></a>二級標題	<code>##</code></h2></li>
-<li><h3 id="三級標題"><a href="#三級標題" class="headerlink" title="三級標題	###"></a>三級標題	<code>###</code></h3></li>
-<li><h4 id="四級標題"><a href="#四級標題" class="headerlink" title="四級標題	####"></a>四級標題	<code>####</code></h4></li>
-<li><h5 id="五級標題"><a href="#五級標題" class="headerlink" title="五級標題	#####"></a>五級標題	<code>#####</code></h5></li>
-<li><h6 id="六級標題"><a href="#六級標題" class="headerlink" title="六級標題	######"></a>六級標題	<code>######</code></h6></li>
-<li>一級、二級標題自動加分隔線</li>
-</ul>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><hr>
-<ul>
-<li><blockquote>
-<p>內容	<code>&gt;內容</code></p>
-</blockquote>
-</li>
-<li><blockquote>
-<blockquote>
-<p>內容	<code>&gt;&gt;內容</code></p>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-<h3 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h3><hr>
-<p><code>---</code></p>
-<p><code>- - - - 或 ***</code></p>
-<h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><hr>
-<ul>
-<li><img src="/.com//..%5Cimages%5Cpasted-0.png" alt="upload successful"><br><code>![upload successful](..\images\pasted-0.png)</code></li>
-</ul>
-<h3 id="超鏈結"><a href="#超鏈結" class="headerlink" title="超鏈結"></a>超鏈結</h3><hr>
-<ul>
-<li>[ 文字 ] ( 鏈結 )</li>
-<li>自動鏈結：&lt;<a href="https://www.google.com.tw/">https://www.google.com.tw/</a>&gt;</li>
-</ul>
-<p><code>自動鏈結：&lt;[https://www.google.com.tw/](https://www.google.com.tw/)&gt;</code></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><hr>
-<ul>
-<li>無序：- 文字</li>
-<li>有序：數字. 文字</li>
-</ul>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><hr>
-<ul>
-<li>Markdown 表格的基本組成是 標題列 和 分隔列，可以沒有資料列。</li>
-<li>表格的欄位數以標題列的欄位數為基準<ul>
-<li>欄位以 | 劃分，外側的垂直分隔符號可以不寫。</li>
-<li>分隔列每欄至少要有三個 - 號，左邊右邊插入 : 號指定對齊方式。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Age           | Time  | Food | Gold | Requirement</span><br><span class="line">|---|---|---|---|---|</span><br><span class="line">Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2</span><br><span class="line">Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2</span><br><span class="line">Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2</span><br></pre></td></tr></table></figure>
-
-<h3 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h3><hr>
-<ul>
-<li>產生目錄：[TOC]</li>
-</ul>
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><hr>
-<p>$$ f(x,y,z) &#x3D; 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$</p>
-]]></content>
-      <categories>
-        <category>Markdown 語法</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>語法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript 進階語法教學</title>
     <url>/2023/12/15/JavaScript-%E9%80%B2%E9%9A%8E%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
     <content><![CDATA[<h2 id="1-閉包（Closures）"><a href="#1-閉包（Closures）" class="headerlink" title="1. 閉包（Closures）"></a>1. 閉包（Closures）</h2><ul>
@@ -542,6 +406,96 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 語法</title>
+    <url>/2023/12/15/Markdown-%E8%AA%9E%E6%B3%95/</url>
+    <content><![CDATA[<hr>
+<h3 id="程式區塊"><a href="#程式區塊" class="headerlink" title="程式區塊"></a>程式區塊</h3><hr>
+<ul>
+<li>行內程式碼：&#96;</li>
+<li>程式區塊碼：&#96;&#96;&#96; + 程式語言</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="文字字體樣式"><a href="#文字字體樣式" class="headerlink" title="文字字體樣式"></a>文字字體樣式</h3><hr>
+<ul>
+<li><strong>粗體</strong><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">**粗體**</span><br></pre></td></tr></table></figure></li>
+<li><em>斜體</em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜體*</span><br></pre></td></tr></table></figure></li>
+<li><em><strong>粗斜體</strong></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">***粗斜體***</span><br></pre></td></tr></table></figure></li>
+<li>&#x3D;&#x3D;高亮&#x3D;&#x3D;<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">==高亮==</span><br></pre></td></tr></table></figure></li>
+<li><del>刪除線</del><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~刪除線~~</span><br></pre></td></tr></table></figure></li>
+<li><u>底線</u><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;底線&lt;/u&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<sup>上標</sup><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sup&gt;上標&lt;/sup&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<sub>下標</sub><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;sub&gt;下標&lt;/sub&gt;</span><br></pre></td></tr></table></figure></li>
+<li>文字<mark>高亮</mark><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文字&lt;mark&gt;高亮&lt;/mark&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h3><hr>
+<ul>
+<li><h1 id="一級標題"><a href="#一級標題" class="headerlink" title="一級標題	#"></a>一級標題	<code>#</code></h1></li>
+<li><h2 id="二級標題"><a href="#二級標題" class="headerlink" title="二級標題	##"></a>二級標題	<code>##</code></h2></li>
+<li><h3 id="三級標題"><a href="#三級標題" class="headerlink" title="三級標題	###"></a>三級標題	<code>###</code></h3></li>
+<li><h4 id="四級標題"><a href="#四級標題" class="headerlink" title="四級標題	####"></a>四級標題	<code>####</code></h4></li>
+<li><h5 id="五級標題"><a href="#五級標題" class="headerlink" title="五級標題	#####"></a>五級標題	<code>#####</code></h5></li>
+<li><h6 id="六級標題"><a href="#六級標題" class="headerlink" title="六級標題	######"></a>六級標題	<code>######</code></h6></li>
+<li>一級、二級標題自動加分隔線</li>
+</ul>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><hr>
+<ul>
+<li><blockquote>
+<p>內容	<code>&gt;內容</code></p>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<p>內容	<code>&gt;&gt;內容</code></p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h3><hr>
+<p><code>---</code></p>
+<p><code>- - - - 或 ***</code></p>
+<h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><hr>
+<ul>
+<li><img src="/../images/pasted-0.png" alt="upload successful"><br><code>![upload successful](../images/pasted-0.png)</code></li>
+</ul>
+<h3 id="超鏈結"><a href="#超鏈結" class="headerlink" title="超鏈結"></a>超鏈結</h3><hr>
+<ul>
+<li>[ 文字 ] ( 鏈結 )</li>
+<li>自動鏈結：&lt;<a href="https://www.google.com.tw/">https://www.google.com.tw/</a>&gt;</li>
+</ul>
+<p><code>自動鏈結：&lt;[https://www.google.com.tw/](https://www.google.com.tw/)&gt;</code></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><hr>
+<ul>
+<li>無序：- 文字</li>
+<li>有序：數字. 文字</li>
+</ul>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><hr>
+<ul>
+<li>Markdown 表格的基本組成是 標題列 和 分隔列，可以沒有資料列。</li>
+<li>表格的欄位數以標題列的欄位數為基準<ul>
+<li>欄位以 | 劃分，外側的垂直分隔符號可以不寫。</li>
+<li>分隔列每欄至少要有三個 - 號，左邊右邊插入 : 號指定對齊方式。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Age           | Time  | Food | Gold | Requirement</span><br><span class="line">|---|---|---|---|---|</span><br><span class="line">Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2</span><br><span class="line">Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2</span><br><span class="line">Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2</span><br></pre></td></tr></table></figure>
+
+<h3 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h3><hr>
+<ul>
+<li>產生目錄：[TOC]</li>
+</ul>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><hr>
+<p>$$ f(x,y,z) &#x3D; 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$</p>
+]]></content>
+      <categories>
+        <category>Markdown 語法</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>語法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你好世界</title>
     <url>/2023/12/10/hello-world/</url>
     <content><![CDATA[<p>歡迎來到 <a href="https://hexo.io/">Hexo</a>! 這是您的第一篇文章。 查看 <a href="https://hexo.io/docs/">documentation</a> 以取得更多資訊。 如果您在使用Hexo 時遇到任何問題，可以在 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 中找到答案，也可以在 <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -560,6 +514,52 @@
 ]]></content>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git 語法教學</title>
+    <url>/2023/12/15/Git-%E8%AA%9E%E6%B3%95%E6%95%99%E5%AD%B8/</url>
+    <content><![CDATA[<p>Git 是一個分佈式版本控制系統，用於協作軟體開發，跟蹤變更，並管理程式碼的歷史記錄。以下是一些 Git 的基本語法和指令。</p>
+<h2 id="1-設定-Git"><a href="#1-設定-Git" class="headerlink" title="1. 設定 Git"></a>1. 設定 Git</h2><p>在使用 Git 之前，您需要設定您的使用者名稱和電子郵件地址。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-初始化儲存庫"><a href="#2-初始化儲存庫" class="headerlink" title="2. 初始化儲存庫"></a>2. 初始化儲存庫</h2><p>要開始使用 Git，您需要初始化一個儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-複製儲存庫（Clone）"><a href="#3-複製儲存庫（Clone）" class="headerlink" title="3. 複製儲存庫（Clone）"></a>3. 複製儲存庫（Clone）</h2><p>複製一個現有的遠端儲存庫到您的本地機器。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone remote_repository_url</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-提交變更（Commit）"><a href="#4-提交變更（Commit）" class="headerlink" title="4. 提交變更（Commit）"></a>4. 提交變更（Commit）</h2><p>將已修改的檔案提交到儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add filename</span><br><span class="line">git commit -m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-分支管理（Branching）"><a href="#5-分支管理（Branching）" class="headerlink" title="5. 分支管理（Branching）"></a>5. 分支管理（Branching）</h2><p>創建、切換和合併分支。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch branch_name</span><br><span class="line">git checkout branch_name</span><br><span class="line">git merge branch_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-檢視提交歷史"><a href="#6-檢視提交歷史" class="headerlink" title="6. 檢視提交歷史"></a>6. 檢視提交歷史</h2><p>查看提交歷史和差異。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-遠端儲存庫（Remote-Repositories）"><a href="#7-遠端儲存庫（Remote-Repositories）" class="headerlink" title="7. 遠端儲存庫（Remote Repositories）"></a>7. 遠端儲存庫（Remote Repositories）</h2><p>添加、刪除和管理遠端儲存庫。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote add remote_name remote_repository_url</span><br><span class="line">git remote remove remote_name</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-拉取和推送（Pull-and-Push）"><a href="#8-拉取和推送（Pull-and-Push）" class="headerlink" title="8. 拉取和推送（Pull and Push）"></a>8. 拉取和推送（Pull and Push）</h2><p>拉取遠端儲存庫的變更並推送您的變更。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-解決衝突（Resolving-Conflicts）"><a href="#9-解決衝突（Resolving-Conflicts）" class="headerlink" title="9. 解決衝突（Resolving Conflicts）"></a>9. 解決衝突（Resolving Conflicts）</h2><p>當多個分支產生衝突時，解決衝突。</p>
+<h2 id="10-標籤（Tags）"><a href="#10-標籤（Tags）" class="headerlink" title="10. 標籤（Tags）"></a>10. 標籤（Tags）</h2><p>創建和管理標籤以標記特定的提交。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git tag tag_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-忽略檔案（-gitignore）"><a href="#11-忽略檔案（-gitignore）" class="headerlink" title="11. 忽略檔案（.gitignore）"></a>11. 忽略檔案（.gitignore）</h2><p>建立一個 .gitignore 檔案以忽略不需要跟蹤的檔案。</p>
+<h2 id="12-暫存（Stash）"><a href="#12-暫存（Stash）" class="headerlink" title="12. 暫存（Stash）"></a>12. 暫存（Stash）</h2><p>臨時儲存目前的工作，以在其他分支上工作。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git stash save &quot;Stash message&quot;</span><br><span class="line">git stash list</span><br><span class="line">git stash apply stash@&#123;n&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="13-重置（Reset）"><a href="#13-重置（Reset）" class="headerlink" title="13. 重置（Reset）"></a>13. 重置（Reset）</h2><p>重設提交的 HEAD 以及在不同模式下回復檔案。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git reset commit</span><br><span class="line">git reset file</span><br><span class="line">git reset --hard commit</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Git 課程</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>語法教學</tag>
       </tags>
   </entry>
 </search>
