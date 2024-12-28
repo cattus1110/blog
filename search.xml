@@ -562,4 +562,148 @@
         <tag>Hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>中短線投資</title>
+    <url>/2024/12/28/%E4%B8%AD%E7%9F%AD%E7%B7%9A%E6%8A%95%E8%B3%87/</url>
+    <content><![CDATA[<h1 id="策略搭配與懶人包"><a href="#策略搭配與懶人包" class="headerlink" title="策略搭配與懶人包"></a>策略搭配與懶人包</h1><hr>
+<h2 id="趨勢確認：MACD-SAR"><a href="#趨勢確認：MACD-SAR" class="headerlink" title="趨勢確認：MACD + SAR"></a>趨勢確認：MACD + SAR</h2><h3 id="搭配方式與策略"><a href="#搭配方式與策略" class="headerlink" title="搭配方式與策略"></a><strong>搭配方式與策略</strong></h3><ul>
+<li><strong>MACD 確認市場趨勢（多頭或空頭）</strong></li>
+<li><strong>SAR 快速捕捉進出場點</strong></li>
+<li><strong>使用條件：</strong><ul>
+<li>當 MACD 金叉且 SAR 在價格下方時，可考慮買入。</li>
+<li>當 MACD 死叉且 SAR 在價格上方時，可考慮賣出。</li>
+</ul>
+</li>
+</ul>
+<h3 id="MACD"><a href="#MACD" class="headerlink" title="MACD"></a><strong>MACD</strong></h3><ul>
+<li><strong>功能：</strong> 判斷市場趨勢方向和強弱，避免逆勢操作。</li>
+<li><strong>用法：</strong><ul>
+<li>金叉（DIF 上穿 DEA）：多頭信號，適合買入。</li>
+<li>死叉（DIF 下穿 DEA）：空頭信號，適合賣出。</li>
+<li>柱狀圖放大：趨勢加強。</li>
+<li>柱狀圖縮小：趨勢減弱或反轉。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/ozugcWisz8o?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 MACD 用法</a></p>
+<h3 id="SAR"><a href="#SAR" class="headerlink" title="SAR"></a><strong>SAR</strong></h3><ul>
+<li><strong>功能：</strong> 確認趨勢方向及進出場信號。</li>
+<li><strong>用法：</strong><ul>
+<li>SAR 點位在價格下方：多頭信號，適合買入。</li>
+<li>SAR 點位在價格上方：空頭信號，適合賣出。</li>
+<li>配合其他指標使用，確認趨勢可靠性。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/n2WAZ01UGC8?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 SAR 用法</a></p>
+<hr>
+<h2 id="支撐壓力判斷：BOLL-KDJ"><a href="#支撐壓力判斷：BOLL-KDJ" class="headerlink" title="支撐壓力判斷：BOLL + KDJ"></a>支撐壓力判斷：BOLL + KDJ</h2><h3 id="搭配方式與策略-1"><a href="#搭配方式與策略-1" class="headerlink" title="搭配方式與策略"></a><strong>搭配方式與策略</strong></h3><ul>
+<li><strong>BOLL（布林通道）確認價格波動區間</strong></li>
+<li><strong>KDJ 捕捉短線買賣信號</strong></li>
+<li><strong>使用條件：</strong><ul>
+<li>當價格接近布林通道下軌且 KDJ 顯示超賣時，可考慮買入。</li>
+<li>當價格接近布林通道上軌且 KDJ 顯示超買時，可考慮賣出。</li>
+</ul>
+</li>
+</ul>
+<h3 id="BOLL"><a href="#BOLL" class="headerlink" title="BOLL"></a><strong>BOLL</strong></h3><ul>
+<li><strong>功能：</strong> 判斷價格波動區間，確認支撐和壓力位。</li>
+<li><strong>用法：</strong><ul>
+<li>價格靠近上軌：可能回落，適合賣出。</li>
+<li>價格靠近下軌：可能反彈，適合買入。</li>
+<li>價格突破上軌或下軌：預示可能進入趨勢行情。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/s4q9_3CY_aM?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 BOLL 用法</a></p>
+<h3 id="KDJ"><a href="#KDJ" class="headerlink" title="KDJ"></a><strong>KDJ</strong></h3><ul>
+<li><strong>功能：</strong> 判斷超買、超賣及短期買賣點。</li>
+<li><strong>用法：</strong><ul>
+<li>K 線上穿 D 線，且低於 20（超賣區）：買入信號。</li>
+<li>K 線下穿 D 線，且高於 80（超買區）：賣出信號。</li>
+<li>快速捕捉短線買賣點，對價格波動敏感。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/bHY9XMRKWDA?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 KDJ 用法</a></p>
+<hr>
+<h2 id="趨勢有效性驗證：VOL-ATR"><a href="#趨勢有效性驗證：VOL-ATR" class="headerlink" title="趨勢有效性驗證：VOL + ATR"></a>趨勢有效性驗證：VOL + ATR</h2><h3 id="搭配方式與策略-2"><a href="#搭配方式與策略-2" class="headerlink" title="搭配方式與策略"></a><strong>搭配方式與策略</strong></h3><ul>
+<li><strong>VOL 驗證趨勢是否獲得成交量支持</strong></li>
+<li><strong>ATR 確認波動性，用於動態止損和止盈</strong></li>
+<li>適合順勢交易，抓住快速行情，適用短線或中線交易。</li>
+</ul>
+<h3 id="VOL"><a href="#VOL" class="headerlink" title="VOL"></a><strong>VOL</strong></h3><ul>
+<li><strong>功能：</strong> 驗證價格波動是否得到成交量支持，確認趨勢的有效性。</li>
+<li><strong>用法：</strong><ul>
+<li>價格上漲且成交量放大：多頭信號更可靠。</li>
+<li>價格下跌且成交量放大：空頭信號更可靠。</li>
+<li>成交量萎縮時，需警惕假突破或趨勢減弱。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/Xs39Lj4BDKI?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 VOL 用法</a></p>
+<h3 id="ATR"><a href="#ATR" class="headerlink" title="ATR"></a><strong>ATR</strong></h3><ul>
+<li><strong>功能：</strong> 衡量市場波動性，適合設置止損、止盈，輔助判斷突破或盤整行情。</li>
+<li><strong>用法：</strong><ul>
+<li>利用 ATR 計算動態止損和止盈，搭配趨勢指標判斷方向，提高交易精準度。</li>
+<li><strong>適用場景：</strong> 短線交易或突破行情，高波動市場效果尤為突出。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://youtu.be/OAi5a7j4XNw?list=PLwFInW1LQRI1j4xiTMpf0HJ0tHDw7k0ed">了解更多 ATR 用法</a></p>
+<hr>
+<h2 id="懶人包：做多做空策略（SAR-ATR）"><a href="#懶人包：做多做空策略（SAR-ATR）" class="headerlink" title="懶人包：做多做空策略（SAR + ATR）"></a>懶人包：做多做空策略（SAR + ATR）</h2><h3 id="做多策略"><a href="#做多策略" class="headerlink" title="做多策略"></a><strong>做多策略</strong></h3><ol>
+<li><p><strong>進場條件：</strong></p>
+<ul>
+<li>SAR（拋物線指標）點位在價格下方，顯示上漲趨勢。</li>
+<li>ATR 波幅較高，表明市場波動劇烈，適合進場。</li>
+</ul>
+</li>
+<li><p><strong>止損設置：</strong></p>
+<ul>
+<li>使用 ATR 計算止損：進場價 - ATR × N（建議 N &#x3D; 1.5 或 2）。</li>
+<li>例子：進場價 100，ATR 為 10，止損設為 100 - 10 × 1.5 &#x3D; 85。</li>
+</ul>
+</li>
+<li><p><strong>出場條件：</strong></p>
+<ul>
+<li>SAR 點位轉至價格上方，顯示趨勢反轉。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="做空策略"><a href="#做空策略" class="headerlink" title="做空策略"></a><strong>做空策略</strong></h3><ol>
+<li><p><strong>進場條件：</strong></p>
+<ul>
+<li>SAR（拋物線指標）點位在價格上方，顯示下跌趨勢。</li>
+<li>ATR 波幅較高，表明市場波動劇烈，適合進場。</li>
+</ul>
+</li>
+<li><p><strong>止損設置：</strong></p>
+<ul>
+<li>使用 ATR 計算止損：進場價 + ATR × N（建議 N &#x3D; 1.5 或 2）。</li>
+<li>例子：進場價 100，ATR 為 10，止損設為 100 + 10 × 1.5 &#x3D; 115。</li>
+</ul>
+</li>
+<li><p><strong>出場條件：</strong></p>
+<ul>
+<li>SAR 點位轉至價格下方，顯示趨勢反轉。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="適用市場"><a href="#適用市場" class="headerlink" title="適用市場"></a><strong>適用市場</strong></h3><ul>
+<li><strong>SAR：</strong> 適合趨勢市場，幫助判斷進出場點。</li>
+<li><strong>ATR：</strong> 幫助設置動態止損，避免被正常波動掃出場。</li>
+</ul>
+<h3 id="總結"><a href="#總結" class="headerlink" title="總結"></a><strong>總結</strong></h3><p>SAR 判斷趨勢方向，ATR 用於動態風險管理，兩者結合適合短線和波動性高的市場交易。</p>
+]]></content>
+      <categories>
+        <category>虛擬貨幣投資</category>
+      </categories>
+      <tags>
+        <tag>投資</tag>
+        <tag>虛擬貨幣</tag>
+      </tags>
+  </entry>
 </search>
